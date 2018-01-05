@@ -1,0 +1,34 @@
+html{
+max-height: $standar;
+max-width: $standar;
+}
+body {
+    width: $standar;
+    position: relative;
+    background-color: orange;
+}
+.one{
+  background-color: purple;
+  height: $standar;
+  width: $standar;
+}
+
+.two{
+  background-color: pink;
+  height: $standar;
+  width: $standar;
+}
+
+.three{
+  background-color: blue;
+  height: $standar;
+  width: $standar;
+}
+
+
+@media screen and (min-width: 960px) {
+  body{
+    max-width: 960px;
+    margin-left: calc(50% - 480px)
+  }
+}
