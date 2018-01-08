@@ -19,19 +19,23 @@ class Landing extends React.Component {
       <section className='landing'>
           <div>Landing Page</div>
           <BrowserRouter>
-            <section>
-              <Route exact={true} path='/one' component={One} />
-              <Route exact={true} path='/two' component={Two} />
-              <Route exact={true} path='/three' component={Three} />
-            </section>
+          <div>
+            <header>
+              <h1> cool swee awesome yeeee </h1>
+              <nav>
+                <ul>
+                  <li><Link to='/welcome/page1'> Page-1 </Link> </li>
+                  <li><Link to='/welcome/page2'>  Page-2 </Link> </li>
+                  <li><Link to='/page3'>  Page-3 </Link> </li>
+                </ul>
+              </nav>
+            </header>
+
+            <Route exact path='/welcome/page1' component={One} />
+            <Route exact path='/welcome/page2' component={Two} />
+            <Route exact path='/page3' component={Three} />
+          </div>
           </BrowserRouter>
-          <section>   
-          <header>       
-            <Link to="/one">One</Link>
-            <Link to="/two">Two</Link>
-            <Link to="/three">Three</Link>
-          </header>
-          </section>
       </section>
     )
   }

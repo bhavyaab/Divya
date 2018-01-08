@@ -13,7 +13,7 @@ class Three extends React.Component {
   render(){
     return (
       <section className='three'>
-          Wana Switch Page? Click here to <Link to="/two">Two</Link> <Link to="/three">Three</Link>
+          Page 3
       </section>
     )
   }

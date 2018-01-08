@@ -14,7 +14,7 @@ class One extends React.Component {
   render(){
     return (
       <section className='one'>
-            Wana Switch Page? Click here to <Link to="/two">Two</Link>
+          Page 1
       </section>
     )
   }
