@@ -13,7 +13,7 @@ class Three extends React.Component {
   render(){
     return (
       <section className='three'>
-          Page 3
+          <h1>Page 3</h1>
       </section>
     )
   }
