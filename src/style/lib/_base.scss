@@ -7,22 +7,21 @@ body {
     position: relative;
     background-color: orange;
 }
+.one, .two, .three{
+  height: $standar;
+  width: $standar;  
+  text-align: center;
+}
 .one{
   background-color: purple;
-  height: $standar;
-  width: $standar;
 }
 
 .two{
   background-color: pink;
-  height: $standar;
-  width: $standar;
 }
 
 .three{
   background-color: yellow;
-  height: $standar;
-  width: $standar;
 }
 
 
