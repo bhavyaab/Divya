@@ -16,27 +16,25 @@ let plugins = [
   new DefinePlugin({
     __DEBUG__: JSON.stringify(!production),
   }),
-  new CopyWebpackPlugin([{
-    // from: `${__dirname}/src/image/`,
-    // to: `${__dirname}/build/image/`,
-  },
-  {
-    // from: `${__dirname}/src/audio/`,
-    // to: `${__dirname}/build/audio/`,
-  }]),
+  // new CopyWebpackPlugin([{
+  //   // from: `${__dirname}/src/image/`,
+  //   // to: `${__dirname}/build/image/`,
+  // },
+  // {
+  //   // from: `${__dirname}/src/audio/`,
+  //   // to: `${__dirname}/build/audio/`,
+  // }]),
 ]
 
-if (production) {
-  // plugins = plugins.concat([ new CleanPlugin(), new UglifyPlugin() ])
-}
+// if (production) {
+//   // plugins = plugins.concat([ new CleanPlugin(), new UglifyPlugin() ])
+// }
 
 module.exports = {
   plugins,
   entry: `${__dirname}/src/main.js`,
-  devServer: {
-    historyApiFallback: true,
-  },
-  devtool: production ? undefined : 'eval',
+  devServer: { historyApiFallback: true },
+  devtool: production ? undefined : 'source-map',
   output: {
     path: `${__dirname}/build`,
     filename: 'bundle.js',
