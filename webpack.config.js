@@ -16,19 +16,15 @@ let plugins = [
   new DefinePlugin({
     __DEBUG__: JSON.stringify(!production),
   }),
-  // new CopyWebpackPlugin([{
-  //   // from: `${__dirname}/src/image/`,
-  //   // to: `${__dirname}/build/image/`,
-  // },
-  // {
-  //   // from: `${__dirname}/src/audio/`,
-  //   // to: `${__dirname}/build/audio/`,
-  // }]),
+  new CopyWebpackPlugin([{
+    from: `${__dirname}/src/image/`,
+    to: `${__dirname}/build/image/`,
+  }]),
 ]
 
-// if (production) {
-//   // plugins = plugins.concat([ new CleanPlugin(), new UglifyPlugin() ])
-// }
+if (production) {
+  plugins = plugins.concat([ new CleanPlugin(), new UglifyPlugin() ])
+}
 
 module.exports = {
   plugins,

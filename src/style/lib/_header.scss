@@ -1,0 +1,27 @@
+.logo{
+  height: 5vh;
+  width: 5vh;
+  padding: 5%;
+}
+
+nav{
+  text-align:  center;
+  margin-bottom: 4%;
+  li{
+    padding: 1%;
+  }
+  // li:last-child{
+  //   padding-bottom: 5%;
+  // }
+  li:hover{
+    font-weight: bold;
+  }
+}
+
+.ham{
+  position: relative;
+  cursor: pointer;
+  img{
+    position: absolute;
+  }
+}
