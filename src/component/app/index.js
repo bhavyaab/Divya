@@ -1,17 +1,17 @@
 'use strict'
 import React from 'react'
 import {Provider} from 'react-redux'
-import {BrowserRouter, Route, Link} from 'react-router-dom'
+import {BrowserRouter, Route} from 'react-router-dom'
 
 import createAppStore from '../../lib/store.js'
-import renderIf from '../../lib/util.js'
-import Landing from '../landing'
 
 const store = createAppStore()
 
 import One from '../one'
 import Two from '../two'
 import Three from '../three'
+import Headers from '../header'
+import Landing from '../landing'
  
 class App extends React.Component {
   constructor(props){
@@ -24,22 +24,7 @@ class App extends React.Component {
         <Provider store={store}>
           <BrowserRouter>
           <div>
-            <header>
-             <img className="logo" src="../../image/logo.png" alt="Square shape logo" />
-             <div className='ham'>
-              <img className="logo" src="../../image/close-menu.png" alt="close sign" />
-              <img className="logo" src="../../image/ham.png" alt="hamburger menu icon" />
-             </div>
-              <nav>
-                <ul>
-                  <li><Link to='/'> Landing </Link> </li>
-                  <li><Link to='/page1'> Page-1 </Link> </li>
-                  <li><Link to='/page2'>  Page-2 </Link> </li>
-                  <li><Link to='/page3'>  Page-3 </Link> </li>
-                </ul>
-              </nav>
-            </header>
-
+            <Headers></Headers>
             <Route exact path='/page1' component={One} />
             <Route exact path='/page2' component={Two} />
             <Route exact path='/page3' component={Three} />

@@ -1,7 +1,11 @@
-.logo{
-  height: 10vh;
-  width: 10vh;
-  padding: 5%;
+header{
+  position: relative;
+  padding-bottom: 5%;
+  img{
+    height: 10vh;
+    width: 10vh;
+    margin: 2.5% 5%;
+  }
 }
 
 nav{
@@ -10,18 +14,22 @@ nav{
   li{
     padding: 1%;
   }
-  // li:last-child{
-  //   padding-bottom: 5%;
-  // }
   li:hover{
     font-weight: bold;
   }
 }
 
 .ham{
-  position: relative;
   cursor: pointer;
-  img{
-    position: absolute;
+  text-align: right;
+  margin-right: 10%;
+  margin-top: -10%;
+  i{
+    font-size: 5vh;
+  }
+}
+@media screen and (min-width: 960px){
+  .ham{
+    display: none;
   }
 }
