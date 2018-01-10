@@ -19,19 +19,20 @@ handleClick(e){
   e.preventDefault()
   this.setState({showHam: !this.state.showHam})
 }
+
   render(){
     return (
       <header>
        <Link to='/' > <img src="../../image/logo.png" alt="Square shape logo" /></Link>
        <div className='ham' 
        data-toggle="collapse" 
-       data-target="#collapseable" 
+       data-target="#collapseable"
        aria-expanded="false" 
        onClick={this.handleClick}>
         {renderIf(!this.state.showHam,<i className="icon-X"></i>)}
         {renderIf(this.state.showHam,<i className="icon-menu"></i>)}
        </div>
-        <nav className="collapse" id="collapseable">
+        <nav className='collapse' id="collapseable">
           <ul >
             <li><Link to='/'> Landing </Link> </li>
             <li><Link to='/page1'> Page-1 </Link> </li>

@@ -2,7 +2,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
-
+import One from '../one'
+import Two from '../two'
+import Three from '../three'
 
 class Landing extends React.Component {
   constructor(props){
@@ -14,6 +16,9 @@ class Landing extends React.Component {
     return (
       <section className='landing'>
           <div>Landing Page</div>
+          <One></One>
+          <Two></Two>
+          <Three></Three>
       </section>
     )
   }
