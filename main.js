@@ -6,15 +6,15 @@ const BrowserWindow = electron.BrowserWindow
 
 var mainWindow
 
-app.on('ready', function(){
-  mainWindow = new BrowserWindow()
-  // mainWindow.loadURL('http://bhavya2.herokuapp.com')
-  mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'build/index.html'),
-    protocol: 'file:',
-    slashes: true,
-  }))
-})
+// app.on('ready', function(){
+//   mainWindow = new BrowserWindow()
+//   // mainWindow.loadURL('http://bhavya2.herokuapp.com')
+//   mainWindow.loadURL(url.format({
+//     pathname: path.join(__dirname, 'build/index.html'),
+//     protocol: 'file:',
+//     slashes: true,
+//   }))
+// })
 
 // const {app, BrowserWindow} = require('electron')
 // const path = require('path')
