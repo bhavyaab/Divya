@@ -16,7 +16,6 @@ class Landing extends React.Component {
   render(){
     return (
       <section className='landing'>
-          <Carousel></Carousel>
           <One></One>
           <Two></Two>
           <Three></Three>
