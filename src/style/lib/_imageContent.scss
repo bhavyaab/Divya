@@ -1,0 +1,53 @@
+.imageContent{
+  .item{
+    width: 100%;
+    margin: 2.5%;
+    position: relative;
+  }
+  img, .description{
+    width: 40%;
+    height: 50%;
+  }
+  .description{
+    h2{
+      font-size: 4vh;
+      padding: 2.5% 0 0 0;
+      text-align: center;
+    }
+    h4{
+      padding: 0 0 5% 0;
+      text-align: center;
+    }
+  }  
+  .left{
+    img{
+      margin: 0% 5%;
+    }
+    
+    .description{
+      position: absolute;
+      top: 0%;
+      left: 50%;
+    }
+    
+  }
+  .right{
+    .description{
+      margin: 0% 5%;
+    }
+    
+    img{
+      height: 100%;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .imageContent{
+    width: 1280px;
+    margin-left: calc(50% - 640px);
+  }
+}
