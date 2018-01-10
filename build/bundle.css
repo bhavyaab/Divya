@@ -54,19 +54,20 @@ body {
   position: relative;
   background-color: orange; }
 
-.one, .two, .three {
-  height: 100%;
-  width: 100%;
-  text-align: center; }
-
 .one {
-  background-color: purple; }
+  background-color: purple;
+  height: 100%;
+  width: 100%; }
 
 .two {
-  background-color: pink; }
+  background-color: pink;
+  height: 100%;
+  width: 100%; }
 
 .three {
-  background-color: yellow; }
+  background-color: yellow;
+  height: 100%;
+  width: 100%; }
 
 @media screen and (min-width: 960px) {
   body {
