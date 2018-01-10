@@ -10,11 +10,19 @@ class One extends React.Component {
     super(props)
     this.state = {}
   }
-
   render(){
-    return (
-      <section className='one'>
-          <h1>Page 1</h1>
+      return (
+      <section className='imageContent'>
+          {this.props.content.map((item, index) => (
+          <div className={item.indent? 'item ' + item.indent: 'item left'} key={index} >
+            <img src={item.img} />
+            <div className="description">
+            <h2>{item.header}</h2>
+            <h4>{item.subHeader}</h4>
+            <p>{item.content}</p>
+            </div>
+          </div>
+    ))}
       </section>
     )
   }
@@ -22,7 +30,10 @@ class One extends React.Component {
 
 
 const mapStateToProps = (state, props) => {
-  return {}
+  console.log('state: ', state);
+  return {
+    content: state.imageContent
+  }
 }
 
 const mapDispatchToProp = (dispatch, getState) => {

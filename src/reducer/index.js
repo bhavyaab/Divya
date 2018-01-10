@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux'
 
-import gameReducer from './game.js'
+import imageContentReducer from './imageContent.js'
 
 export default combineReducers({
-  game: gameReducer,
+  imageContent: imageContentReducer,
 })

@@ -5,6 +5,7 @@ import {renderIf} from '../../lib/util'
 import One from '../one'
 import Two from '../two'
 import Three from '../three'
+import Carousel from '../carousel'
 
 class Landing extends React.Component {
   constructor(props){
@@ -15,7 +16,7 @@ class Landing extends React.Component {
   render(){
     return (
       <section className='landing'>
-          <div>Landing Page</div>
+          <Carousel></Carousel>
           <One></One>
           <Two></Two>
           <Three></Three>
