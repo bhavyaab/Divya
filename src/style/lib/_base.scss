@@ -12,6 +12,13 @@ body {
     width: $standar;
     position: relative;
 }
+a{
+  color: $color-4;
+}
+a:active, a:hover {
+  color: $color-5;
+  text-decoration: none;
+}
 .one, .two, .three{
   height: $standar;
   width: $standar;  

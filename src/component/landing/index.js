@@ -18,7 +18,7 @@ class Landing extends React.Component {
   // <Three></Three>
   background = {
     one: '/../image/wallpapers.jpeg',
-    two: '/../image/wallpapers2.jpg',
+    two: '/../image/landing.jpg',
     three: '/../image/facial-2.jpg',
   }
   render(){
@@ -26,6 +26,11 @@ class Landing extends React.Component {
     return (
       <section className='landing'>
         <Carousel background={this.background}></Carousel>
+        <div className="landingText">
+          <h4> Welcome to </h4>
+          <h2 id="brand-name">Sondarya</h2>
+          <h4>Beauty Salon</h4>
+        </div>
       </section>
     )
   }

@@ -23,7 +23,9 @@ handleClick(e){
   render(){
     return (
       <header>
-       <Link to='/' > <img src="../../image/logo.png" alt="Square shape logo" /></Link>
+       <Link to='/' >
+         <img src="../../image/logo-2.svg" alt="Square shape logo" />
+       </Link>
        <div className='ham' 
        data-toggle="collapse" 
        data-target="#collapseable"
