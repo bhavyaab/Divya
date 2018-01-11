@@ -5,7 +5,7 @@ import {renderIf} from '../../lib/util'
 
 import {Link} from 'react-router-dom'
 
-class One extends React.Component {
+class ImageContent extends React.Component {
   constructor(props){
     super(props)
     this.state = {}
@@ -40,5 +40,5 @@ const mapDispatchToProp = (dispatch, getState) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProp)(One)
+export default connect(mapStateToProps, mapDispatchToProp)(ImageContent)
 

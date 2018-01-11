@@ -29,15 +29,16 @@ handleClick(e){
        data-target="#collapseable"
        aria-expanded="false" 
        onClick={this.handleClick}>
-        {renderIf(!this.state.showHam,<i className="icon-X"></i>)}
-        {renderIf(this.state.showHam,<i className="icon-menu"></i>)}
+        {renderIf(!this.state.showHam,<i className="fas fa-asterisk"></i>)}
+        {renderIf(this.state.showHam,<i className="fas fa-bars"></i>)}
        </div>
         <nav className='collapse' id="collapseable">
           <ul >
-            <li><Link to='/'> Landing </Link> </li>
+            <li><Link to='/'> Home </Link> </li>
+            <li><Link to='/page2'>  About </Link> </li>
+            <li><Link to='/page3'>  Services </Link> </li>
+            <li><Link to='/page3'>  Contact </Link> </li>
             <li><Link to='/page1'> Page-1 </Link> </li>
-            <li><Link to='/page2'>  Page-2 </Link> </li>
-            <li><Link to='/page3'>  Page-3 </Link> </li>
           </ul>
         </nav>
       </header>
