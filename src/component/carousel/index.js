@@ -23,24 +23,12 @@ class Carousel extends React.Component {
         <div className="carousel-inner">
         <div className="carousel-item active">
           <img className="d-block w-100" src={this.props.background.one} alt="First slide"/>
-          <div className="carousel-caption d-none d-md-block">
-             <h1>One</h1>
-             <p>jdnfoa ofdoif  osdfoisfj f</p>
-           </div>
         </div>
         <div className="carousel-item">
           <img className="d-block w-100" src={this.props.background.two} alt="Second slide"/>
-          <div className="carousel-caption d-none d-md-block">
-           <h1>Two</h1>
-           <p>afof s dfosf f</p>
-         </div>
         </div>
         <div className="carousel-item">
           <img className="d-block w-100" src={this.props.background.three} alt="Third slide"/>
-          <div className="carousel-caption d-none d-md-block">
-           <h1>Three</h1>
-           <p>dnfosf  odsijfos  ifs fs</p>
-         </div>
         </div>
         </div>
         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
