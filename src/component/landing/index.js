@@ -26,6 +26,8 @@ class Landing extends React.Component {
     two: '/../image/landing.jpg',
     three: '/../image/facial-2.jpg',
   }
+  
+  // <i className="fa fa-location-arrow" aria-hidden="true"></i>
   render(){
     
     return (
@@ -41,7 +43,7 @@ class Landing extends React.Component {
           <h4>by appointment only </h4>
           <h4><i className="fa fa-mobile" aria-hidden="true"></i> +1 (425) 233 8888 </h4>
           <a href="https://www.google.com/maps/place/5504+NE+8th+Pl,+Renton,+WA+98059/@47.4968557,-122.1477913,17z/data=!3m1!4b1!4m5!3m4!1s0x549067d5528f3e65:0xffcbfd30fa59106b!8m2!3d47.4968559!4d-122.1455952" target="blank">
-           <i className="fa fa-map-marker" aria-hidden="true"></i> Click to view location</a> <i className="fa fa-location-arrow" aria-hidden="true"></i>
+           <i className="fa fa-map-marker" aria-hidden="true"></i> Click to view location</a>
           </div>
         </div>
       </section>

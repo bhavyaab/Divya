@@ -30,15 +30,16 @@
   }
 }
 
-.landigInfo{
-  width: 50%;
-  padding: 5% 0%;
-  margin-top: 5%;
-  margin-left: 25%;
-  color: $color-5;
-  background-color: rgba(25, 16, 23, 0.65); 
+.landigInfo{  
+  width: 60%;
+  padding: 5%;
+  margin-top: 50%;
+  margin-left: 20%;
+  background-color: rgba(25, 16, 23, 0.65);
   border-radius: 10px;
+  color: $color-5;
+  font-size: 5vw;
   h4{
-    padding: 0.5%;
+    padding: 1.5%;
   }
 }
