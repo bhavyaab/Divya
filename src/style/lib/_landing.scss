@@ -30,8 +30,9 @@
   }
 }
 
-.landigInfo{  
+.landingInfo{  
   width: 60%;
+  max-width: 350px;
   padding: 5%;
   margin-top: 30%;
   margin-left: 20%;
@@ -42,4 +43,21 @@
   h4{
     padding: 1.5%;
   }
+}
+
+@media screen and (min-width: 500px) {
+  .landingInfo{
+    margin: 0 auto;    
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .landingInfo{
+    width: 300px;
+    font-size: 2vh;
+    padding: 2.5%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+  }
+  
 }

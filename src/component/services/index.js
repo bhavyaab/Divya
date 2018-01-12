@@ -12,8 +12,8 @@ class Services extends React.Component {
 
   render(){
     return (
-      <section className='three'>
-          <h1>Page 3</h1>
+      <section className='services'>
+          <h1>Services</h1>
       </section>
     )
   }
@@ -21,7 +21,10 @@ class Services extends React.Component {
 
 
 const mapStateToProps = (state, props) => {
-  return {}
+  console.log(' state ', state);
+  return {
+    services: state.services
+  }
 }
 
 const mapDispatchToProp = (dispatch, getState) => {

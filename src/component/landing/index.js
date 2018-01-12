@@ -37,7 +37,7 @@ class Landing extends React.Component {
           <img src="../../image/logo.svg" alt="logo" />
           <h4 id="brand-name">Sondarya</h4>
           <div id="salon" >Beauty <i className="fas fa-cut"></i> Salon</div>
-          <div className="landigInfo">
+          <div className="landingInfo">
           <h4>Days: Monday - Friday,</h4>
           <h4>Hours: 10am - 8pm,</h4>
           <h4>by appointment only </h4>
@@ -46,6 +46,8 @@ class Landing extends React.Component {
            <i className="fa fa-map-marker" aria-hidden="true"></i> Click to view location</a>
           </div>
         </div>
+        
+        <Services></Services>
       </section>
     )
   }
