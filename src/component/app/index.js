@@ -9,7 +9,7 @@ const store = createAppStore()
 
 import ImageContent from '../imageContent'
 import Two from '../two'
-import Three from '../three'
+import Services from '../services'
 import Headers from '../header'
 import Landing from '../landing'
  
@@ -27,7 +27,7 @@ class App extends React.Component {
             <Headers></Headers>
             <Route exact path='/page1' component={ImageContent} />
             <Route exact path='/page2' component={Two} />
-            <Route exact path='/page3' component={Three} />
+            <Route exact path='/services' component={Services} />
             <Route exact path='/' component={Landing} />
           </div>
           </BrowserRouter>

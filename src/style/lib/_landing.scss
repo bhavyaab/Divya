@@ -16,10 +16,29 @@
   position: absolute;
   top: 25%;
   text-align: center;
-  color: $color-5;
+  font-size: 2vw;
+  // font-family: 'Bevan', cursive;
+  font-family: 'Cuprum', sans-serif;
+  color: $color-4;
+  img{
+    height: 15vh;
+  }
 }
+// #welcome{
+//   margin-right: 35%;
+//   transform: rotate(-25deg);
+// }
 #brand-name{
   font-family: 'Cabin Sketch', cursive;
   font-size: 10vw;
+  color: $color-5;
   
+}
+#salon{
+  font-weight: bold;
+  font-size: 5vw;
+  i{
+    color: $color-5;
+    transform: rotate(-90deg);
+  }
 }

@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
 
 import {BrowserRouter, Route, Link} from 'react-router-dom'
-class Three extends React.Component {
+class Services extends React.Component {
   constructor(props){
     super(props)
     this.state = {}
@@ -28,5 +28,5 @@ const mapDispatchToProp = (dispatch, getState) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProp)(Three)
+export default connect(mapStateToProps, mapDispatchToProp)(Services)
 

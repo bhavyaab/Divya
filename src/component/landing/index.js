@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
 import ImageContent from '../imageContent'
 import Two from '../two'
-import Three from '../three'
+import Services from '../services'
 import Carousel from '../carousel'
 
 class Landing extends React.Component {
@@ -16,6 +16,9 @@ class Landing extends React.Component {
   // <ImageContent></ImageContent>
   // <Two></Two>
   // <Three></Three>
+  
+  
+  // <img src="/../image/comb.png" />
   background = {
     one: '/../image/wallpapers.jpeg',
     two: '/../image/landing.jpg',
@@ -27,9 +30,9 @@ class Landing extends React.Component {
       <section className='landing'>
         <Carousel background={this.background}></Carousel>
         <div className="landingText">
-          <h4> Welcome to </h4>
+          <img src="../../image/logo-2.svg" alt="logo" />
           <h2 id="brand-name">Sondarya</h2>
-          <h4>Beauty Salon</h4>
+          <div id="salon" >Beauty <i className="fas fa-cut"></i> Salon</div>
         </div>
       </section>
     )
