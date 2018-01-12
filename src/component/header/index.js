@@ -24,7 +24,7 @@ handleClick(e){
     return (
       <header>
        <Link to='/' >
-         <img src="../../image/logo-2.svg" alt="logo" />
+         <img src="../../image/logo.svg" alt="logo" />
        </Link>
        <div className='ham' 
        data-toggle="collapse" 
@@ -38,8 +38,8 @@ handleClick(e){
           <ul >
             <li><Link to='/'> Home </Link> </li>
             <li><Link to='/services'>  Services </Link> </li>
-            <li><Link to='/page2'>  About </Link> </li>
-            <li><Link to='/page3'>  Contact </Link> </li>
+            <li><Link to='/about'>  About </Link> </li>
+            <li><Link to='/contact'>  Contact </Link> </li>
             <li><Link to='/page1'> Page-1 </Link> </li>
           </ul>
         </nav>
