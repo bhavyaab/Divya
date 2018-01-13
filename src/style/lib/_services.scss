@@ -1,4 +1,40 @@
 .services{
-  background-color: pink;
-  min-height: 50vh;
+  width: 100%;
+  background-color: $color-4;
+  h2{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 3em;
+  }
+  .allService{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+   }
+    .serviceItem{
+    position: relative;
+    width: 25vh;
+    display: inline-block;
+    margin: 2.5%;
+    .image{
+      width: 25vh;
+      height: 25vh;
+      border-radius: 5px;
+      // background-image: url('/../image/hair-salon.png');
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name{
+      padding: 5%;
+      width: 100%;
+      background-color: $color-1-rgba;
+      color: $color-5;
+    }
+    .detail{
+      width: 90%;
+      padding: 5%;
+    }
+    }
 }

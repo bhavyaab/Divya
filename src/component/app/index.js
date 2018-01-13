@@ -26,11 +26,13 @@ class App extends React.Component {
           <BrowserRouter>
           <div>
             <Headers></Headers>
+            <div className='component'>
             <Route exact path='/page1' component={ImageContent} />
             <Route exact path='/about' component={About} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/services' component={Services} />
             <Route exact path='/' component={Landing} />
+            </div>
           </div>
           </BrowserRouter>
         </Provider>

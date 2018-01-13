@@ -11,6 +11,7 @@ max-width: $standar;
 body {
     width: $standar;
     position: relative;
+    font-family: 'Cuprum', sans-serif;
 }
 a{
   color: $color-4;
@@ -18,6 +19,9 @@ a{
 a:active, a:hover {
   color: $color-5;
   text-decoration: none;
+}
+.component{
+  padding-top: 5vh;
 }
 .one, .two, .three{
   height: $standar;

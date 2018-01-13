@@ -1,8 +1,10 @@
 'use strict'
 
-let initialState = {
-  hair: {
-    name: 'Hair',
+let initialState = [ 
+  {
+    name: 'Hair Services',
+    img: '../image/hairCut.jpg',
+    detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
     types: {
       'COLOR': [{'FULL FOIL': '123'}, {'PARTIAL FOIL': '90'},{'FULL COLOR': '80'}, {'COLOR RETOUCH': '70'},{'TONER':'90'}, {'BALAYAGE': '143'}, {'PARTIAL BALAYAGE': '123'},
     {'MEN\'S CAMO COLOR': '30'}, {'EYEBROW TINT': '21'}],
@@ -14,26 +16,32 @@ let initialState = {
       'STYLE': [{'FLAT IRON/CURL': '32'},{'SPECIAL OCCASION STYLE': '71'},{'SHAMPOO BLOWDRY': '39-51'}]
     }
   },
-  facial: {
-    name: 'Facial',
-    types: {
-      '': [{'Rejuvenating Facial (45 minutes)': '70.00'},{'Oxygenating Trio Facial (45 minutes)' : '70.00'}]
-    }
-  },
-  threading: {
+  {
     name: 'Threading',
+    img: '../image/eyebrow.jpg',
+    detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
     types: {
       '': [{'Eyebrow threading': '3.99'}]
     }
   },
-  waxing: {
+  {
+    name: 'Facial',
+    img: '../image/Facial.jpg',
+    detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
+    types: {
+      '': [{'Rejuvenating Facial (45 minutes)': '70.00'},{'Oxygenating Trio Facial (45 minutes)' : '70.00'}]
+    }
+  },
+  {
     name: 'Waxing',
+    img: '../image/waxing.jpg',
+    detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
     types: {
       '': [ {'Billion Dollar Brow (includes shaping)': '20.00'},
                   {'Lip': '10.00'},{'Chin': '15.00'},{'Jawline': '15.00'},{'Sideburns': '15.00'},{'Underarm': '20.00'}]
     }
   }
-}
+]
 export default (state=initialState, action) => {
   let {type, payload} = action
   switch (type) {
