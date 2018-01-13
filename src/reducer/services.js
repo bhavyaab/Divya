@@ -26,7 +26,7 @@ let initialState = [
   },
   {
     name: 'Facial',
-    img: '../image/Facial.jpg',
+    img: '../image/facial.jpg',
     detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
     types: {
       '': [{'Rejuvenating Facial (45 minutes)': '70.00'},{'Oxygenating Trio Facial (45 minutes)' : '70.00'}]
