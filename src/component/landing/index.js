@@ -13,23 +13,23 @@ class Landing extends React.Component {
   constructor(props){
     super(props)
     this.state = {}
-    
+
   }
   // <ImageContent></ImageContent>
   // <Two></Two>
   // <Three></Three>
-  
-  
+
+
   // <img src="/../image/comb.png" />
   background = {
     one: '/../image/wallpapers.jpeg',
     two: '/../image/landing.jpg',
     three: '/../image/facial-2.jpg',
   }
-  
+
   // <i className="fa fa-location-arrow" aria-hidden="true"></i>
   render(){
-    
+
     return (
       <section className='landing'>
         <Carousel background={this.background}></Carousel>
@@ -46,8 +46,9 @@ class Landing extends React.Component {
            <i className="fa fa-map-marker" aria-hidden="true"></i> Click to view location</a>
           </div>
         </div>
-        
+
         <Services></Services>
+        <Contact></Contact>
       </section>
     )
   }

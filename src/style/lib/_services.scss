@@ -13,11 +13,11 @@
    }
     .serviceItem{
     position: relative;
-    width: 25vh;
+    width: 30vw;
     display: inline-block;
     margin: 2.5%;
     .image{
-      width: 25vh;
+      // width: 25vh;
       height: 25vh;
       border-radius: 5px;
       // background-image: url('/../image/hair-salon.png');
@@ -36,5 +36,11 @@
       width: 90%;
       padding: 5%;
     }
+    }
+    @media screen and (min-width: 1024px) {
+      .serviceItem{
+        width: 20vw;
+        margin: 1%;
+      }
     }
 }

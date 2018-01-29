@@ -13,12 +13,13 @@ class Headers extends React.Component {
     }
     this.handleClick = this.handleClick.bind(this)
   }
-  
+
   // https://icomoon.io/app/#/select/font
 handleClick(e){
   e.preventDefault()
   this.setState({showHam: !this.state.showHam})
 }
+// <li><Link to='/page1'> Page-1 </Link> </li>
 
   render(){
     return (
@@ -26,10 +27,10 @@ handleClick(e){
        <Link to='/' >
          <img src="../../image/logo.svg" alt="logo" />
        </Link>
-       <div className='ham' 
-       data-toggle="collapse" 
+       <div className='ham'
+       data-toggle="collapse"
        data-target="#collapseable"
-       aria-expanded="false" 
+       aria-expanded="false"
        onClick={this.handleClick}>
         {renderIf(!this.state.showHam,<i className="fas fa-asterisk"></i>)}
         {renderIf(this.state.showHam,<i className="fas fa-bars"></i>)}
@@ -40,7 +41,6 @@ handleClick(e){
             <li><Link to='/services'>  Services </Link> </li>
             <li><Link to='/about'>  About </Link> </li>
             <li><Link to='/contact'>  Contact </Link> </li>
-            <li><Link to='/page1'> Page-1 </Link> </li>
           </ul>
         </nav>
       </header>
@@ -58,4 +58,3 @@ const mapDispatchToProp = (dispatch, getState) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProp)(Headers)
-

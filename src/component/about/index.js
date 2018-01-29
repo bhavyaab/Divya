@@ -3,17 +3,26 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
 
-import {BrowserRouter, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+
 class About extends React.Component {
   constructor(props){
     super(props)
     this.state = {}
   }
-//Google api key : AIzaSyA3OgCLXVXYu6o7PWq5VTELYnGMmf_4_fA
   render(){
-    return (
-      <section className='about'>
-          <h1>About</h1>
+      return (
+      <section className='imageContent'>
+          {this.props.content.map((item, index) => (
+          <div className={item.indent? 'item ' + item.indent: 'item left'} key={index} >
+            <img src={item.img} />
+            <div className="description">
+            <h2>{item.header}</h2>
+            <h4>{item.subHeader}</h4>
+            <p>{item.content}</p>
+            </div>
+          </div>
+    ))}
       </section>
     )
   }
@@ -21,7 +30,10 @@ class About extends React.Component {
 
 
 const mapStateToProps = (state, props) => {
-  return {}
+  console.log('state: ', state);
+  return {
+    content: state.imageContent
+  }
 }
 
 const mapDispatchToProp = (dispatch, getState) => {
@@ -29,4 +41,3 @@ const mapDispatchToProp = (dispatch, getState) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProp)(About)
-

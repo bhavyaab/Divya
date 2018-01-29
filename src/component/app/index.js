@@ -7,13 +7,13 @@ import createAppStore from '../../lib/store.js'
 
 const store = createAppStore()
 
-import ImageContent from '../imageContent'
+import About from '../imageContent'
 import Contact from '../contact'
-import About from '../about'
+// import About from '../about'
 import Services from '../services'
 import Headers from '../header'
 import Landing from '../landing'
- 
+
 class App extends React.Component {
   constructor(props){
     super(props)
@@ -27,7 +27,6 @@ class App extends React.Component {
           <div>
             <Headers></Headers>
             <div className='component'>
-            <Route exact path='/page1' component={ImageContent} />
             <Route exact path='/about' component={About} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/services' component={Services} />

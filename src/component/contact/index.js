@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
 
 import {BrowserRouter, Route, Link} from 'react-router-dom'
-class Two extends React.Component {
+class Contact extends React.Component {
   constructor(props){
     super(props)
     this.state = {}
@@ -16,8 +16,8 @@ class Two extends React.Component {
     return (
       <section className='two'>
           <h1>Page 2</h1>
-          <iframe className="map" 
-src="https://www.google.com/maps/embed/v1/search?q=5504%20ne%208th%20pl%20renton&key=AIzaSyA3OgCLXVXYu6o7PWq5VTELYnGMmf_4_fA" allowfullscreen></iframe>
+          <iframe className="map"
+src="https://www.google.com/maps/embed/v1/search?q=5504%20ne%208th%20pl%20renton&key=AIzaSyA3OgCLXVXYu6o7PWq5VTELYnGMmf_4_fA"></iframe>
       </section>
     )
   }
@@ -32,5 +32,4 @@ const mapDispatchToProp = (dispatch, getState) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProp)(Two)
-
+export default connect(mapStateToProps, mapDispatchToProp)(Contact)
