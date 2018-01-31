@@ -7,9 +7,8 @@ import createAppStore from '../../lib/store.js'
 
 const store = createAppStore()
 
-import About from '../imageContent'
+import About from '../about'
 import Contact from '../contact'
-// import About from '../about'
 import Services from '../services'
 import Headers from '../header'
 import Landing from '../landing'

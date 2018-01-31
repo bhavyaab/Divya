@@ -2,7 +2,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
-import ImageContent from '../imageContent'
 
 import About from '../about'
 import Contact from '../contact'
