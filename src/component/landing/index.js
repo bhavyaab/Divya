@@ -14,12 +14,6 @@ class Landing extends React.Component {
     this.state = {}
 
   }
-  // <ImageContent></ImageContent>
-  // <Two></Two>
-  // <Three></Three>
-
-
-  // <img src="/../image/comb.png" />
   background = {
     one: '/../image/wallpapers.jpeg',
     two: '/../image/landing.jpg',
