@@ -8,25 +8,19 @@ import Contact from '../contact'
 import Carousel from '../carousel'
 import Services from '../services'
 
+import {withRouter} from 'react-router-dom'
 class Landing extends React.Component {
   constructor(props){
     super(props)
     this.state = {}
 
   }
-  // <ImageContent></ImageContent>
-  // <Two></Two>
-  // <Three></Three>
-
-
-  // <img src="/../image/comb.png" />
   background = {
     one: '/../image/wallpapers.jpeg',
     two: '/../image/landing.jpg',
     three: '/../image/facial-2.jpg',
   }
 
-  // <i className="fa fa-location-arrow" aria-hidden="true"></i>
   render(){
 
     return (
@@ -62,4 +56,4 @@ const mapDispatchToProp = (dispatch, getState) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProp)(Landing)
+export default  withRouter(connect(mapStateToProps, mapDispatchToProp)(Landing))

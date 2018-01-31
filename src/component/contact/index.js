@@ -3,7 +3,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
 
-import {BrowserRouter, Route, Link} from 'react-router-dom'
+import { withRouter} from 'react-router-dom'
 class Contact extends React.Component {
   constructor(props){
     super(props)
@@ -65,4 +65,4 @@ const mapDispatchToProp = (dispatch, getState) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProp)(Contact)
+export default withRouter(connect(mapStateToProps, mapDispatchToProp)(Contact))

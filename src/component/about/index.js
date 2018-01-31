@@ -3,7 +3,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
 
-import {Link} from 'react-router-dom'
+import {Link,  withRouter} from 'react-router-dom'
 
 class About extends React.Component {
   constructor(props){
@@ -40,4 +40,4 @@ const mapDispatchToProp = (dispatch, getState) => {
   return {}
 }
 
-export default connect(mapStateToProps, mapDispatchToProp)(About)
+export default  withRouter(connect(mapStateToProps, mapDispatchToProp)(About))
