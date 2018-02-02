@@ -17,8 +17,8 @@ let plugins = [
     __DEBUG__: JSON.stringify(!production),
   }),
   new CopyWebpackPlugin([{
-    from: `${__dirname}/src/image/`,
-    to: `${__dirname}/build/image/`,
+    from: `${__dirname}/src/images/`,
+    to: `${__dirname}/build/images/`,
   }]),
 ]
 

@@ -11,13 +11,13 @@ max-width: $standar;
 body {
     width: $standar;
     position: relative;
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 a{
-  color: $color-4;
+  color: inherit;
 }
 a:active, a:hover {
-  color: $color-5;
+  color: $color-1;
   text-decoration: none;
 }
 .component{
