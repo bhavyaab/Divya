@@ -3,6 +3,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
 
+import BookMe from '../bookMe'
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 class Home extends React.Component {
   constructor(props){
@@ -13,8 +14,16 @@ class Home extends React.Component {
   render(){
     return (
       <section className='home'>
+        <h4>Explore the beauty!</h4>
+        <div className="book">
+          <ul className="title">
+            <li>BOOK AN </li>
+            <li>APPOINTMENT</li>
+          </ul>
+          <BookMe></BookMe>
+        </div>
       
-      <img src="../../images/Sondarya.png" />
+       <img src="../../images/homeBkgd.jpg" className="ref"/>
       </section>
     )
   }

@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  max-height: 100%;
+  max-width: 100%; }
+
+body {
+  width: 100%;
+  position: relative;
+  font-family: 'Raleway', sans-serif; }
+
+a {
+  color: inherit; }
+
+a:active, a:hover {
+  color: #191017;
+  text-decoration: none; }
+
+.component {
+  padding-top: 5vh; }
+
+.one, .two, .three {
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+
+.one {
+  background-color: purple; }
+
+.two {
+  background-color: pink; }
+
+.three {
+  background-color: yellow; }
+
+.home {
+  min-height: 100vh;
+  width: 100%; }
+  .home img {
+    width: 100%; }
+
+header {
+  width: 100%;
+  font-family: 'Cuprum', sans-serif;
+  position: fixed;
+  font-size: 3vh;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #b65d8b;
+  padding-bottom: 1%; }
+  header img {
+    height: 10.5vh;
+    margin-left: 5%; }
+  header a {
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    font-size: 0.8em; }
+
+nav {
+  text-align: center;
+  padding-bottom: 4%; }
+  nav li {
+    padding: 1%; }
+  nav li:last-child {
+    padding-bottom: 0%; }
+  nav li:hover {
+    font-weight: bold; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(180deg); } }
+
+.ham {
+  cursor: pointer;
+  position: absolute;
+  top: 2vh;
+  left: 85%; }
+  .ham i {
+    font-size: 5vh; }
+
+.ham:active {
+  animation-name: rotate ease;
+  animation-duration: 8s;
+  animation-direction: alternate; }
+
+@media screen and (min-width: 960px) {
+  header {
+    padding-bottom: 0%; }
+  .ham {
+    display: none; }
+  .collapse {
+    display: block; }
+  nav {
+    padding-bottom: 0%;
+    font-size: 2vh; }
+  nav > ul {
+    position: absolute;
+    width: 60%;
+    left: 45%;
+    top: 35%; }
+  nav > ul > li {
+    display: inline-block;
+    margin-right: 3.5%; } }
+
+.landing {
+  width: 100%;
+  position: relative; }
+
+.landingText {
+  width: 100%;
+  position: absolute;
+  top: 15vh;
+  text-align: center;
+  color: #E488F0; }
+  .landingText img {
+    height: 15vh; }
+
+#brand-name {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 10vw;
+  color: #F8F1FF; }
+
+#salon {
+  font-weight: bold;
+  font-size: 5vw; }
+  #salon i {
+    color: #F8F1FF;
+    transform: rotate(-90deg); }
+
+.landingInfo {
+  width: 60%;
+  max-width: 350px;
+  font-size: 1em;
+  padding: 5%;
+  margin-top: 30%;
+  margin-left: 20%;
+  background-color: rgba(25, 16, 23, 0.65);
+  border-radius: 10px;
+  color: #F8F1FF; }
+  .landingInfo h4 {
+    padding: 1.5%; }
+
+@media screen and (min-width: 500px) {
+  .landingInfo {
+    margin: 10vh auto; } }
+
+@media screen and (min-width: 800px) {
+  .landingInfo {
+    width: 300px;
+    padding: 2.5%;
+    margin-left: 5%;
+    margin-top: 2.5%; } }
+
+.carousel img {
+  height: 100% !important;
+  width: 100% !important; }
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #A35298;
+  color: #191017;
+  font-size: 1.5em; }
+  .contact h2 {
+    padding: 10% 5%  5% 5%;
+    text-align: center;
+    font-size: 10vh; }
+  .contact .map {
+    width: 40%;
+    margin: 5%;
+    display: inline-block;
+    border: 5px solid black; }
+  .contact .right {
+    position: absolute;
+    left: 45vw; }
+  .contact h4 {
+    text-align: center;
+    padding: 0.5%; }
+  .contact iframe {
+    width: 100%;
+    padding: 5%; }
+
+@media screen and (min-width: 1024px) {
+  .contactUs {
+    width: 70%;
+    margin-left: 15%; } }
+
+.services {
+  width: 100%;
+  background-color: #E488F0; }
+  .services h2 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 3em; }
+  .services .allService {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  .services .serviceItem {
+    position: relative;
+    width: 30vw;
+    display: inline-block;
+    margin: 2.5%; }
+    .services .serviceItem .image {
+      height: 25vh;
+      border-radius: 5px; }
+      .services .serviceItem .image img {
+        width: 100%;
+        height: 100%; }
+    .services .serviceItem .name {
+      padding: 5%;
+      width: 100%;
+      background-color: rgba(25, 16, 23, 0.65);
+      color: #F8F1FF; }
+    .services .serviceItem .detail {
+      width: 90%;
+      padding: 5%; }
+  @media screen and (min-width: 1024px) {
+    .services .serviceItem {
+      width: 20vw;
+      margin: 1%; } }
+
+.imageContent .item {
+  width: 100%;
+  margin: 2.5%;
+  position: relative; }
+
+.imageContent img, .imageContent .description {
+  width: 40%;
+  height: 50%; }
+
+.imageContent .description h2 {
+  font-size: 4vh;
+  padding: 2.5% 0 0 0;
+  text-align: center; }
+
+.imageContent .description h4 {
+  padding: 0 0 5% 0;
+  text-align: center; }
+
+.imageContent .left img {
+  margin: 0% 5%; }
+
+.imageContent .left .description {
+  position: absolute;
+  top: 0%;
+  left: 50%; }
+
+.imageContent .right .description {
+  margin: 0% 5%; }
+
+.imageContent .right img {
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 50%; }
+
+@media screen and (min-width: 1280px) {
+  .imageContent {
+    width: 1280px;
+    margin-left: calc(50% - 640px); } }

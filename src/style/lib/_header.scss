@@ -6,11 +6,11 @@ header{
   position: fixed;
   font-size: 3vh;
   z-index: 20;
-  background-color: $white_rgba;
+  background-color: $white;
   color: $color-2;
   padding-bottom: 1%;
   img{
-    height: 10.5vh;
+    height: 3em;
     margin-left: 5%;
   }
   a{
@@ -32,26 +32,14 @@ nav{
     font-weight: bold;
   }
 }
-@keyframes rotate {
-    // 0%   {transform: rotate(0deg);}
-    // 25%  {transform: rotate(90deg)}
-    // 50%  {transform: rotate(180deg)}
-    // 75%  {transform: rotate(270deg)}
-    // 100% {transform: rotate(360deg)}
-    from {
-				transform: rotate(0deg);
-		}
-		to {
-				transform: rotate(180deg);
-		}
-}
+
 .ham{
   cursor: pointer;
   position: absolute;
   top: 2vh;
   left: 85%;
   i{
-    font-size: 5vh;
+    font-size: 1.25em;
   }
 }
 .ham:active{
@@ -62,6 +50,7 @@ nav{
 @media screen and (min-width: 960px){
   header{
     padding-bottom: 0%;
+    background-color: $white_rgba;
   }
   .ham{
     display: none;
@@ -77,13 +66,10 @@ nav{
     position: absolute;
     width: 60%;
     left: 45%;
-    top: 35%;
+    top: 38%;
   }
   nav > ul > li{
     display: inline-block;
     margin-right: 3.5%;
-  }
-  nav > ul > li:last-child{
-    // padding-right: 0px;
   }
 }

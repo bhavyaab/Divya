@@ -30,6 +30,8 @@ class App extends React.Component {
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/services' component={Services} />
             <Route exact path='/' component={Landing} />
+            
+            <img src="../../images/Sondarya.png" className="ref"/>
             </div>
           </div>
           </BrowserRouter>
