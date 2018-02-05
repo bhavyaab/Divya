@@ -16,13 +16,13 @@ class Landing extends React.Component {
   }
 
   // <i className="fa fa-location-arrow" aria-hidden="true"></i>
-  // <About></About>
   // <Contact></Contact>
   render(){
     return (
       <section className='landing'>
         <Home></Home>
         <Services></Services>
+        <About></About>
       </section>
     )
   }

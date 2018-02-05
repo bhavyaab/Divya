@@ -12,17 +12,8 @@ class About extends React.Component {
   }
   render(){
       return (
-      <section id="about" className='imageContent'>
-          {this.props.content.map((item, index) => (
-          <div className={item.indent? 'item ' + item.indent: 'item left'} key={index} >
-            <img src={item.img} />
-            <div className="description">
-            <h2>{item.header}</h2>
-            <h4>{item.subHeader}</h4>
-            <p>{item.content}</p>
-            </div>
-          </div>
-    ))}
+      <section id="about" className='about'>
+        <h2>About Us</h2>
       </section>
     )
   }
@@ -30,10 +21,7 @@ class About extends React.Component {
 
 
 const mapStateToProps = (state, props) => {
-  console.log('state: ', state);
-  return {
-    content: state.imageContent
-  }
+  return {}
 }
 
 const mapDispatchToProp = (dispatch, getState) => {
