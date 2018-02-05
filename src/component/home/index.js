@@ -13,7 +13,7 @@ class Home extends React.Component {
 //Google api key : AIzaSyA3OgCLXVXYu6o7PWq5VTELYnGMmf_4_fA
   render(){
     return (
-      <section className='home'>
+      <section id="home" className='home'>
         <h4>Explore the beauty!</h4>
         <div className="book">
           <ul className="title">

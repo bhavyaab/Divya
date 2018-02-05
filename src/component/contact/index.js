@@ -19,7 +19,7 @@ class Contact extends React.Component {
       message: 'asdddasdad'
     }
     return (
-      <section className='contact'>
+      <section id="contact" className='contact'>
          <div className='contactUs'>
           <h2>Contact Us</h2>
           <div className="map">

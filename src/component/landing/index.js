@@ -17,9 +17,9 @@ class Landing extends React.Component {
 
   // <i className="fa fa-location-arrow" aria-hidden="true"></i>
   // <Services></Services>
+  // <About></About>
   // <Contact></Contact>
   render(){
-
     return (
       <section className='landing'>
         <Home></Home>

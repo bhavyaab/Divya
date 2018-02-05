@@ -12,7 +12,7 @@ class About extends React.Component {
   }
   render(){
       return (
-      <section className='imageContent'>
+      <section id="about" className='imageContent'>
           {this.props.content.map((item, index) => (
           <div className={item.indent? 'item ' + item.indent: 'item left'} key={index} >
             <img src={item.img} />

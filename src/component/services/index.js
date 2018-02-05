@@ -16,7 +16,7 @@ class Services extends React.Component {
   // <p className="detail">{item.detail}</p>
   render(){
     return (
-      <section className='services'>
+      <section id="service" className='services'>
           <h2>Services</h2>
           <div  className='allService'>
           {this.props.services.map((item, index) => (

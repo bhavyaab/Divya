@@ -12,6 +12,7 @@ class Headers extends React.Component {
       showHam: true,
     }
     this.handleClick = this.handleClick.bind(this)
+    this.scrollFunction = this.scrollFunction.bind(this)
   }
 
   // https://icomoon.io/app/#/select/font
@@ -20,9 +21,16 @@ handleClick(e){
   this.setState({showHam: !this.state.showHam})
 }
 // <li><Link to='/page1'> Page-1 </Link> </li>
-
-  render(){
-    return (
+scrollFunction(x, e) {
+  e.preventDefault();
+  document.getElementById(x).scrollIntoView({ 
+  behavior: 'smooth',
+  block: "start",
+  inline: "nearest"
+});  
+}
+render(){
+  return (
       <header>
        <Link to='/' >
          <img src="../../images/logoFull.png" alt="logo" />
@@ -37,10 +45,10 @@ handleClick(e){
        </div>
         <nav className='collapse' id="collapseable">
           <ul >
-            <li><Link to='/'> HOME </Link> </li>
-            <li><Link to='/services'>  SERVICES </Link> </li>
-            <li><Link to='/about'>  ABOUT US</Link> </li>
-            <li><Link to='/contact'>  CONTACT US</Link> </li>
+            <li onClick={this.scrollFunction.bind(this, 'home')} > HOME </li>
+            <li onClick={this.scrollFunction.bind(this, 'service')} > SERVICES </li>
+            <li onClick={this.scrollFunction.bind(this, 'about')} > ABOUT US </li>
+            <li onClick={this.scrollFunction.bind(this, 'contact')} > CONTACT US </li>
           </ul>
         </nav>
       </header>
