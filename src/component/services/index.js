@@ -9,11 +9,6 @@ class Services extends React.Component {
     super(props)
     this.state = {}
   }
-  // <div className={(index%2 == 1)? 'left':'right'}>{item.name}</div>
-  // <img className={(index%2 == 1)? 'right':'left'} src={item.img} />
-
-  
-  // <p className="detail">{item.detail}</p>
   render(){
     return (
       <section id="service" className='services'>
