@@ -43,7 +43,7 @@
 }
 @media screen and (min-width: 1024px) {
   .services{
-    width: 1024px;
+    max-width: 1024px;
     margin-left: calc(50% - 512px);
   }
   // .serviceItem{
