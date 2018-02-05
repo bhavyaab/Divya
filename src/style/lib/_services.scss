@@ -1,9 +1,11 @@
 .services{
   width: 100%;
-  background-color: $color-4;
+  background-color: $white;
+  font-size: 0.15em;
+  font-weight: bold;
   h2{
     text-align: center;
-    padding-top: 5%;
+    padding: 5%;
     font-size: 3em;
   }
   .allService{
@@ -15,10 +17,10 @@
     position: relative;
     width: 30vw;
     display: inline-block;
-    margin: 2.5%;
+    margin: 0.5%;
     .image{
       // width: 25vh;
-      height: 25vh;
+      max-height: 30vh;
       border-radius: 5px;
       // background-image: url('/../image/hair-salon.png');
       img{
@@ -29,8 +31,9 @@
     .name{
       padding: 5%;
       width: 100%;
-      background-color: $color-1-rgba;
-      color: $color-5;
+      color: $color-2;
+      font-size: 1.5em;
+      font-weight: bolder;
     }
     .detail{
       width: 90%;

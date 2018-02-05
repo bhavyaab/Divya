@@ -2,8 +2,8 @@
 
 let initialState = [ 
   {
-    name: 'Hair Services',
-    img: '../image/hairCut.jpg',
+    name: 'HAIR SERVICES',
+    img: '../images/hairServices.jpeg',
     detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
     types: {
       'COLOR': [{'FULL FOIL': '123'}, {'PARTIAL FOIL': '90'},{'FULL COLOR': '80'}, {'COLOR RETOUCH': '70'},{'TONER':'90'}, {'BALAYAGE': '143'}, {'PARTIAL BALAYAGE': '123'},
@@ -17,24 +17,42 @@ let initialState = [
     }
   },
   {
-    name: 'Threading',
-    img: '../image/eyebrow.jpg',
-    detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
-    types: {
-      '': [{'Eyebrow threading': '3.99'}]
-    }
-  },
-  {
-    name: 'Facial',
-    img: '../image/facial.jpg',
+    name: 'SKIN CARE',
+    img: '../images/skinCare.jpg',
     detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
     types: {
       '': [{'Rejuvenating Facial (45 minutes)': '70.00'},{'Oxygenating Trio Facial (45 minutes)' : '70.00'}]
     }
   },
   {
-    name: 'Waxing',
-    img: '../image/waxing.jpg',
+    name: 'WAXING',
+    img: '../images/womanLegs.jpg',
+    detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
+    types: {
+      '': [ {'Billion Dollar Brow (includes shaping)': '20.00'},
+                  {'Lip': '10.00'},{'Chin': '15.00'},{'Jawline': '15.00'},{'Sideburns': '15.00'},{'Underarm': '20.00'}]
+    }
+  },
+  {
+    name: 'THREADING',
+    img: '../images/threading-2.jpeg',
+    detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
+    types: {
+      '': [{'Eyebrow threading': '3.99'}]
+    }
+  },
+  {
+    name: 'MASSAGE',
+    img: '../images/massage.jpeg',
+    detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
+    types: {
+      '': [ {'Billion Dollar Brow (includes shaping)': '20.00'},
+                  {'Lip': '10.00'},{'Chin': '15.00'},{'Jawline': '15.00'},{'Sideburns': '15.00'},{'Underarm': '20.00'}]
+    }
+  },
+  {
+    name: 'NAIL CARE',
+    img: '../images/nailServices.jpeg',
     detail: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
     types: {
       '': [ {'Billion Dollar Brow (includes shaping)': '20.00'},
