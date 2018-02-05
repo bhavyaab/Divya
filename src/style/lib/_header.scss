@@ -47,7 +47,8 @@ nav{
   animation-duration: 8s;
   animation-direction: alternate;
 }
-@media screen and (min-width: 960px){
+
+@media screen and (min-width: 960px) {
   header{
     padding-bottom: 0%;
     background-color: $white_rgba;
