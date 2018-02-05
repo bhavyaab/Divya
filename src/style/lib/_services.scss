@@ -40,10 +40,14 @@
       padding: 5%;
     }
     }
-    @media screen and (min-width: 1024px) {
-      .serviceItem{
-        width: 20vw;
-        margin: 1%;
-      }
-    }
+}
+@media screen and (min-width: 1024px) {
+  .services{
+    width: 1024px;
+    margin-left: calc(50% - 512px);
+  }
+  // .serviceItem{
+  //   width: 20vw;
+  //   margin: 1%;
+  // }
 }
