@@ -1,5 +1,7 @@
 .services{
-  width: 100%;
+  width: 100%;   
+  max-width: 1024px;
+  margin-left: calc(50% - 512px);
   background-color: $white;
   font-size: 0.15em;
   font-weight: bold;
@@ -15,12 +17,12 @@
    }
     .serviceItem{
     position: relative;
-    width: 30vw;
+    width: 30%;
     display: inline-block;
     margin: 0.5%;
     .image{
       // width: 25vh;
-      max-height: 30vh;
+      max-height: 30%;
       border-radius: 5px;
       // background-image: url('/../image/hair-salon.png');
       img{
@@ -42,10 +44,6 @@
     }
 }
 @media screen and (min-width: 1024px) {
-  .services{
-    max-width: 1024px;
-    margin-left: calc(50% - 512px);
-  }
   // .serviceItem{
   //   width: 20vw;
   //   margin: 1%;
