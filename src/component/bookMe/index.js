@@ -32,7 +32,7 @@ class BookMe extends React.Component {
          <label htmlfor="message"></label>
          <textarea type="message" id="message" placeholder={placeholder.message}></textarea>
 
-         <input type="submit" className="bookButton" value="BOOK NOW" />
+         <input type="submit" className="bookButton inForm" value="BOOK NOW" />
        </form>
       </section>
     )

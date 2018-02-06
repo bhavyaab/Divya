@@ -8,8 +8,10 @@
   
   input, textarea{
     width: 100%;
-    padding: 1vw;
-    margin: 2.5%;
+    padding: 0.5em;
+    margin: 2.5% 0%;
+    font-size: 0.5em;
+    border: 0.5px solid $color-2;
   }
   textarea{
     height: 8vw;
@@ -21,4 +23,11 @@
   font-size: 1.5vw;
   margin: 2.5% 0 6.5%;
   font-weight: 900;
+}
+
+.inForm{
+  background-color: $color-2;
+  color: $white;
+  border: 2px solid $color-2;
+  
 }

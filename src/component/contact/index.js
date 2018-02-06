@@ -21,13 +21,13 @@ class Contact extends React.Component {
     return (
       <section id="contact" className='contact'>
          <div className='contactUs'>
-          <div className="map">
+          <div className="map left">
             <div className="contactBook">
               <h2>GET IN TOUCH</h2>
               <ul>
-                <li><span>Address:</span><li> 5504 NE 8th  PL Renton WA 98059</li></li>
-                <li><span>Call:</span><li> +1 (425) 233 4321</li></li>
-                <li><span>Email:</span> <li>  info@sondarya.com</li></li>
+                <li><span>Address:</span><div> 5504 NE 8th  PL Renton WA 98059</div></li>
+                <li><span>Call:</span><div> +1 (425) 233 4321</div></li>
+                <li><span>Email:</span> <div>  info@sondarya.com</div></li>
                </ul>
             </div>
           </div>
