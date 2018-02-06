@@ -18,8 +18,18 @@
   }
   textarea{
     height: 8vw;
+    overflow: hidden;
   }
-  
+  ::placeholder { 
+    color: $color-2;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: $color-2;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: $color-2;;
+}
   input:focus, textarea:focus{
     background-color: $white;
     color: $color-1;
