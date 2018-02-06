@@ -16,8 +16,8 @@ class BookMe extends React.Component {
 // </div>
   render(){
     var placeholder = {
-      name: 'Name',
-      mobile: ' - (---) --- ----',
+      name: 'Your Name',
+      mobile: 'Your Number',
       message: 'Say Helo .. '
     }
     return (
@@ -32,7 +32,7 @@ class BookMe extends React.Component {
          <label htmlfor="message"></label>
          <textarea type="message" id="message" placeholder={placeholder.message}></textarea>
 
-         <input type="submit" className="bookButton" value="Send it" />
+         <input type="submit" className="bookButton" value="BOOK NOW" />
        </form>
       </section>
     )

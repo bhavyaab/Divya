@@ -1,8 +1,17 @@
 .contact{
 width: 100%;
 font-size: 2vw;
+color: $color-1;
+font-weight: bolder;
+.contactBook{
+  width: 80%;
+  margin-left: 10%;
+}
+.contactUs{
+  padding: 2.5%;
+}
   h2{
-    text-align: center;
+    padding-left: 2.5%;
   }
   .map{
     width: 50%;
@@ -19,15 +28,9 @@ font-size: 2vw;
       }
     }
   }
- .contactBook{
-   width: 80%;
-   margin-left: 10%;
- }
-  h4{
+  .right{
     text-align: center;
-    padding: 0.5%;
   }
-
 }
 @media screen and (min-width: 1024px) {
   .contactUs{
