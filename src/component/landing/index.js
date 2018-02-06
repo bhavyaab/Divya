@@ -3,10 +3,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {renderIf} from '../../lib/util'
 
-import About from '../about'
-import Contact from '../contact'
 import Home from '../home'
+import About from '../about'
 import Services from '../services'
+import Contact from '../contact'
+import Footer from '../footer'
 
 class Landing extends React.Component {
   constructor(props){
@@ -23,6 +24,7 @@ class Landing extends React.Component {
         <Services></Services>
         <About></About>
         <Contact></Contact>
+        <Footer></Footer>
       </section>
     )
   }
