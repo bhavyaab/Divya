@@ -23,16 +23,16 @@ class BookMe extends React.Component {
     return (
       <section className='bookMe'>
        <form >
-         <label htmlfor="name"></label>
+         <label for="name"></label>
          <input type="text" id="name" placeholder={placeholder.name} required />
 
-         <label htmlfor="email"></label>
+         <label for="email"></label>
          <input type="mobile" id="mobile" placeholder={placeholder.mobile}/>
 
-         <label htmlfor="message"></label>
+         <label for="message"></label>
          <textarea type="message" id="message" placeholder={placeholder.message}></textarea>
 
-         <input type="submit" className="bookButton inForm" value="BOOK NOW" />
+         <button type="submit" className="bookButton inForm" value="BOOK NOW">BOOK NOW</button>
        </form>
       </section>
     )

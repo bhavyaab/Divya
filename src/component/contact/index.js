@@ -27,7 +27,7 @@ class Contact extends React.Component {
               <ul>
                 <li><span>Address:</span><div> 5504 NE 8th  PL Renton WA 98059</div></li>
                 <li><span>Call:</span><div> +1 (425) 233 4321</div></li>
-                <li><span>Email:</span> <div>  info@sondarya.com</div></li>
+                <li><span>Email:</span> <div>sondarya@gmail.com</div></li>
                </ul>
             </div>
           </div>
