@@ -4,7 +4,8 @@ header{
 
   font-family: 'Cuprum', sans-serif;
   position: fixed;
-  font-size: 3vh;
+  font-size: 1.45vw;
+  font-weight: bolder;
   z-index: 20;
   background-color: $white;
   color: $color-2;
@@ -39,7 +40,7 @@ nav{
   top: 2vh;
   left: 85%;
   i{
-    font-size: 1.25em;
+    font-size: 1.45vw;
   }
 }
 .ham:active{
@@ -61,7 +62,7 @@ nav{
   }
   nav{
     padding-bottom: 0%;
-    font-size: 2vh;
+    // font-size: 2vh;
   }
   nav > ul{
     position: absolute;
