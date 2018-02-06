@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  max-height: 100%;
+  max-width: 100%; }
+
+body {
+  width: 100%;
+  position: relative;
+  font-family: 'Raleway', sans-serif; }
+
+a {
+  color: inherit; }
+
+a:active, a:hover {
+  color: #5b4555;
+  text-decoration: none; }
+
+.ref {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: none; }
+
+header {
+  width: 100%;
+  font-family: 'Cuprum', sans-serif;
+  position: fixed;
+  font-size: 3vh;
+  z-index: 20;
+  background-color: #fff;
+  color: #b65d8b;
+  padding-bottom: 1%; }
+  header img {
+    height: 3em;
+    margin-left: 5%; }
+  header a {
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    font-size: 0.8em; }
+
+nav {
+  text-align: center;
+  padding-bottom: 4%; }
+  nav li {
+    padding: 1%; }
+  nav li:last-child {
+    padding-bottom: 0%; }
+  nav li:hover {
+    font-weight: bold; }
+
+.ham {
+  cursor: pointer;
+  position: absolute;
+  top: 2vh;
+  left: 85%; }
+  .ham i {
+    font-size: 1.25em; }
+
+.ham:active {
+  animation-name: rotate ease;
+  animation-duration: 8s;
+  animation-direction: alternate; }
+
+@media screen and (min-width: 960px) {
+  header {
+    padding-bottom: 0%;
+    background-color: rgba(255, 255, 255, 0.5); }
+  .ham {
+    display: none; }
+  .collapse {
+    display: block; }
+  nav {
+    padding-bottom: 0%;
+    font-size: 2vh; }
+  nav > ul {
+    position: absolute;
+    width: 60%;
+    left: 45%;
+    top: 38%; }
+  nav > ul > li {
+    display: inline-block;
+    margin-right: 3.5%; } }
+
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f0eeef;
+  font-weight: bold;
+  letter-spacing: 0.25vw; }
+  .home img {
+    width: 100%;
+    display: none; }
+  .home h4 {
+    font-size: 7vw;
+    padding-top: 20%;
+    text-align: center;
+    color: #5b4555;
+    margin-bottom: 5%; }
+  .home .book {
+    width: 50%;
+    margin-left: 25%; }
+    .home .book .title {
+      background-color: #b65d8b;
+      color: #fff;
+      font-size: 3vw;
+      text-align: center;
+      padding: 5%; }
+      .home .book .title li {
+        padding: 2.5%; }
+
+@media screen and (min-width: 750px) {
+  .home > h4 {
+    font-size: 4vw;
+    text-align: inherit;
+    margin-left: 10%; }
+  .book {
+    width: 25%; } }
+
+.services {
+  width: 100%;
+  max-width: 1024px;
+  background-color: #fff;
+  font-size: 0.15em;
+  font-weight: bold; }
+  .services h2 {
+    text-align: center;
+    padding: 5%;
+    font-size: 10em; }
+  .services .allService {
+    width: 100%;
+    margin: 5%;
+    text-align: center; }
+  .services .serviceItem {
+    position: relative;
+    width: 30vh;
+    display: inline-block;
+    margin: 0.5%; }
+    .services .serviceItem .image {
+      max-height: 30%;
+      border-radius: 5px; }
+      .services .serviceItem .image img {
+        width: 100%;
+        height: 100%; }
+    .services .serviceItem .name {
+      padding: 5%;
+      width: 100%;
+      color: #b65d8b;
+      font-size: 6em;
+      font-weight: 900; }
+    .services .serviceItem .detail {
+      width: 90%;
+      padding: 5%; }
+
+@media screen and (min-width: 500px) {
+  .serviceItem {
+    width: 30%;
+    margin: 1%; } }
+
+@media screen and (min-width: 1024px) {
+  .services {
+    margin-left: calc(50% - 512px); }
+  .serviceItem {
+    width: 30%;
+    margin: 1%; } }
+
+.about {
+  width: 100%;
+  min-height: 10vh;
+  background-color: #5b4555;
+  color: #f2dfda;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .about h2 {
+    font-size: 1.5em;
+    padding: 20% 0 10% 0; }
+  .about p {
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 5%;
+    line-height: 2em; }
+
+.bookButton {
+  background-color: #5b4555;
+  border: 2px solid #f2dfda;
+  color: #f2dfda;
+  padding: 2.5% 5%;
+  font-size: 1em;
+  margin: 2.5% 0% 5% 0;
+  font-weight: bold; }
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #c87fa6;
+  color: #5b4555;
+  font-size: 1.5em; }
+  .contact h2 {
+    padding: 10% 5%  5% 5%;
+    text-align: center;
+    font-size: 10vh; }
+  .contact .map {
+    width: 40%;
+    margin: 5%;
+    display: inline-block;
+    border: 5px solid black; }
+  .contact .right {
+    position: absolute;
+    left: 45vw; }
+  .contact h4 {
+    text-align: center;
+    padding: 0.5%; }
+  .contact iframe {
+    width: 100%;
+    padding: 5%; }
+
+@media screen and (min-width: 1024px) {
+  .contactUs {
+    width: 70%;
+    margin-left: 15%; } }
+
+.landing {
+  width: 100%;
+  position: relative; }
+
+.carousel img {
+  height: 100% !important;
+  width: 100% !important; }
