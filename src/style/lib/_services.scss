@@ -1,6 +1,6 @@
 .services{
   width: 100%;   
-  max-width: 1024px;
+  // max-width: 1024px;
   background-color: $white;
   font-size: 0.15em;
   font-weight: bold;
@@ -16,12 +16,13 @@
    }
     .serviceItem{
     position: relative;
-    width: 30vh;
+    width: 30%;
+    height: 30%;
     display: inline-block;
-    margin: 0.5%;
+    margin: 2.5% 1%;
     .image{
       // width: 25vh;
-      max-height: 30%;
+      // max-height: 30%;
       border-radius: 5px;
       // background-image: url('/../image/hair-salon.png');
       img{
@@ -45,16 +46,16 @@
 
 @media screen and (min-width: 500px) {
   .serviceItem{
-    width: 30%;
-    margin: 1%;
+    // width: 30%;
+    // margin: 1%;
   }
 }
 @media screen and (min-width: 1024px) {
   .services{
-    margin-left: calc(50% - 512px);
+    // margin-left: calc(50% - 512px);
   }
   .serviceItem{
-    width: 30%;
-    margin: 1%;
+    // width: 30%;
+    // margin: 1%;
   }
 }
