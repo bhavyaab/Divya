@@ -16,7 +16,7 @@
    }
     .serviceItem{
     position: relative;
-    width: 30%;
+    width: 30vh;
     display: inline-block;
     margin: 0.5%;
     .image{
@@ -46,8 +46,8 @@
   .services{
     margin-left: calc(50% - 512px);
   }
-  // .serviceItem{
-  //   width: 20vw;
-  //   margin: 1%;
-  // }
+  .serviceItem{
+    width: 20vw;
+    margin: 1%;
+  }
 }
