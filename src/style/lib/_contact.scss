@@ -4,11 +4,11 @@ font-size: 0.65em;
 color: $color-1;
 font-weight: bolder;
 .contactBook{
-  width: 45%;
-  margin-left: 33%;
+  width: 80%;
+  margin-left: 10%;
 }
 .contactUs{
-  padding: 2.5%;
+    padding: 4.75%;
 }
   h2{
     font-size: 1.45em;
@@ -19,7 +19,7 @@ font-weight: bolder;
     display: inline-block;
     vertical-align: text-top;
     ul{
-      margin-left: 6%;
+      margin-top: 15%;
       width: 100%;
     }
     li{
@@ -38,7 +38,7 @@ font-weight: bolder;
   .right{
     h2{
       margin-left: 17%;
-      padding-top: 2%;
+      padding-top: 1%;
     }
   }
   .left > h2{
@@ -46,9 +46,14 @@ font-weight: bolder;
     margin-left: 6%;
     margin-bottom: 14%;
   }
-  // .bookForm{
-  //   width: 80%;
-  // }
+  .bookForm{
+    width: 65%;
+    margin-left: 7%;
+  }
+  .formAdjust{
+    width: 97%;
+    margin-left: 10%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .contactUs{
