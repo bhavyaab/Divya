@@ -16,8 +16,8 @@ class BookMe extends React.Component {
 // </div>
   render(){
     var placeholder = {
-      name: 'Your Name',
-      mobile: 'Your Number',
+      name: 'Your name',
+      mobile: 'Your phone number',
       message: 'Say Helo .. '
     }
     return (

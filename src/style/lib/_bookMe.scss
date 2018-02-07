@@ -18,7 +18,7 @@
     resize: auto;
   }
   textarea{
-    height: 8vw;
+    // height: 8vw;
     overflow: hidden;
   }
   ::placeholder { 
@@ -39,9 +39,9 @@
   }
 }
 .bookButton{
-  padding: 2% 8%;
+  padding: 4% 8%;
   font-size: .75em;
-  margin: 2.5% 0 6.5%;
+  margin: 7.5% 0 6.5%;
   font-weight: 900;
 }
 
