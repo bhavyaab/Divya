@@ -13,7 +13,7 @@ class Footer extends React.Component {
   render(){
     return (
       <section className='footer'>
-         <li>&#9400; 2018 Sondarya All right reserved.</li>
+         <li>&#9400; 2018 Sondarya All Right Reserved.</li>
       </section>
     )
   }
