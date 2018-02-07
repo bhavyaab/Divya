@@ -18,7 +18,7 @@ class BookMe extends React.Component {
     var placeholder = {
       name: 'Your name',
       mobile: 'Your phone number',
-      message: 'Say Helo .. '
+      message: 'Say Hi .. '
     }
     return (
       <section className='bookMe'>
