@@ -1,30 +1,36 @@
 .contact{
 width: 100%;
-font-size: 0.75em;
+font-size: 0.65em;
 color: $color-1;
 font-weight: bolder;
 .contactBook{
-  width: 80%;
-  margin-left: 10%;
+  width: 45%;
+  margin-left: 33%;
 }
 .contactUs{
   padding: 2.5%;
 }
   h2{
-    padding-left: 2.5%;
+    margin-left: 30%;
+    padding-top: 11%;
+    font-size: 1.25em;
+    font-weight: bolder;
   }
   .map{
     width: 50%;
     display: inline-block;
+    vertical-align: text-top;
     li{
-      padding: 2.5%;
+      padding: 5%;    
+      width: 95%;
+      margin-left: 25%;
       span{
         display: inline-block;
         width: 25%;
       }
     }
     li > div{
-      width: 70%;
+      width: 40%;
       display: inline-block;
       vertical-align: top;
     }
