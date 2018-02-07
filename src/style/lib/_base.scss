@@ -21,7 +21,9 @@ a:active, a:hover {
   color: $color-1;
   text-decoration: none;
 }
-
+button{
+  border-radius: none;
+}
 
 .ref{
   position: absolute;
