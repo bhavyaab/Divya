@@ -44,6 +44,28 @@
     padding-bottom: 7.5%;
   }
 }
+.inHome{
+  input, textarea{
+    border: 0.15em solid $color-2;
+    background-color: $white;    
+  }
+  input:focus, textarea:focus{
+    color: $color-1;
+    font-size: 0.75em;
+    background-color: $white;
+    border: 0.15em solid $color-2;
+  }
+    ::placeholder { 
+      color: $color-2;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: $color-2;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+     color: $color-2;;
+  }
+}
 
 @media screen and (min-width:750px){  
   .home > h4{

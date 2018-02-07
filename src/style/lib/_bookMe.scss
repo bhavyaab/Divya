@@ -13,29 +13,15 @@
     padding: .5em;
     margin: 4% 0;
     font-size: .6em;
-    border: 0.15em solid $color-2;
-    background-color: $white;    
     resize: auto;
   }
   textarea{
     // height: 8vw;
     overflow: hidden;
   }
-  ::placeholder { 
-    color: $color-2;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: $color-2;
-}
 
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: $color-2;;
-}
   input:focus, textarea:focus{
-    background-color: $white;
-    color: $color-1;
     font-size: 0.75em;
-    border: 0.15em solid $color-2;
   }
 }
 .bookButton{
@@ -45,9 +31,11 @@
   font-weight: 900;
 }
 
+
 .inForm{
   background-color: $color-2;
   color: $white;
   border: 2px solid $color-2;
   width: 100%;
+
 }

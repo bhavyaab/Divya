@@ -20,6 +20,7 @@ font-weight: bolder;
     ul{
       margin-top: 15%;
       width: 100%;
+      color: $color-33;
     }
     li{
       padding: 5% 0 10%;    
@@ -46,12 +47,36 @@ font-weight: bolder;
     margin-bottom: 14%;
   }
   .bookForm{
-    width: 97%;
+    width: 100%;
     margin-left: 7%;
   }
   .formAdjust{
     width: 97%;
     margin-left: 10%;
+  }
+}
+
+
+.inContact{
+  input, textarea{
+    border: 0.15em solid $color-33;
+    background-color: $white;    
+  }
+  input:focus, textarea:focus{
+    color: $color-33;
+    font-size: 0.75em;
+    background-color: $white;
+    border: 0.15em solid $color-33;
+  }
+    ::placeholder { 
+      color: $color-33;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: $color-33;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+     color: $color-33;
   }
 }
 @media screen and (min-width: 1024px) {

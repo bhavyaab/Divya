@@ -15,7 +15,7 @@ class Home extends React.Component {
     return (
       <section id="home" className='home'>
         <h4>Explore the beauty!</h4>
-        <div className="book">
+        <div className="book inHome">
           <ul className="title">
             <li>BOOK AN </li>
             <li>APPOINTMENT</li>
