@@ -34,7 +34,9 @@ class Contact extends React.Component {
           <div className="map right">
             <div className="contactBook">
                <h2> BOOK AN APPOINTMENT</h2>
-               <BookMe></BookMe>
+               <div className="bookForm">
+                 <BookMe></BookMe>
+               </div>
             </div>
           </div>
         </div>
