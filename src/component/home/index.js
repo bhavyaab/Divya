@@ -21,7 +21,7 @@ class Home extends React.Component {
             <li>APPOINTMENT</li>
           </ul>
           <BookMe></BookMe>
-          <li className="callUs">Call Us at: (425) 233 2388 </li>
+          <li className="callUs">Call us at: (425)-233-2388</li>
         </div>
       
        <img src="../../images/homeBkgd.jpg" className="ref"/>
