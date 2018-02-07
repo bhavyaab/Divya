@@ -4,7 +4,7 @@ header{
 
   font-family: 'Cuprum', sans-serif;
   position: fixed;
-  font-size: 0.75em;
+  font-size: 1.5em;
   font-weight: bolder;
   z-index: 20;
   background-color: $white;
@@ -50,9 +50,14 @@ nav{
   animation-duration: 8s;
   animation-direction: alternate;
 }
-
+@media screen and (min-width: 600px) {
+  header{
+    font-size: 1em;
+  }
+}
 @media screen and (min-width: 960px) {
   header{
+    font-size: 0.75em;
     padding-bottom: 0%;
     background-color: $white_rgba;
   }
