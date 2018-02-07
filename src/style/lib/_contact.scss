@@ -11,37 +11,44 @@ font-weight: bolder;
   padding: 2.5%;
 }
   h2{
-    padding-top: 11%;
-    font-size: 1.25em;
+    font-size: 1.45em;
     font-weight: bolder;
   }
   .map{
     width: 50%;
     display: inline-block;
     vertical-align: text-top;
+    ul{
+      margin-left: 6%;
+      width: 100%;
+    }
     li{
-      padding: 5%;    
-      width: 95%;
-      margin-left: 25%;
+      padding: 5% 0 10%;    
       span{
         display: inline-block;
-        width: 25%;
+        width: 33%;
       }
     }
     li > div{
-      width: 40%;
+      width: 65%;
       display: inline-block;
       vertical-align: top;
     }
   }
   .right{
+    h2{
+      margin-left: 17%;
+      padding-top: 2%;
+    }
   }
   .left > h2{
-      margin-left: 30%;
+    padding-top: 4%;
+    margin-left: 6%;
+    margin-bottom: 14%;
   }
-  .bookForm{
-    width: 80%;
-  }
+  // .bookForm{
+  //   width: 80%;
+  // }
 }
 @media screen and (min-width: 1024px) {
   .contactUs{

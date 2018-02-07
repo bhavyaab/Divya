@@ -25,19 +25,17 @@ class Contact extends React.Component {
             <div className="contactBook">
               <h2>GET IN TOUCH</h2>
               <ul>
-                <li><span>Address:</span><div> 5504 NE 8th  PL Renton WA 98059</div></li>
+                <li><span>Address:</span><div> 5504 NE 8th  Place Renton WA 98059</div></li>
                 <li><span>Call:</span><div> +1 (425) 233 4321</div></li>
                 <li><span>Email:</span> <div>sondarya@gmail.com</div></li>
                </ul>
             </div>
           </div>
           <div className="map right">
-            <div className="contactBook">
+            <div className="bookForm">
                <h2> BOOK AN APPOINTMENT</h2>
-               <div className="bookForm">
                  <BookMe></BookMe>
                </div>
-            </div>
           </div>
         </div>
       </section>
