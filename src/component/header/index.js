@@ -13,6 +13,7 @@ class Headers extends React.Component {
     }
     this.handleClick = this.handleClick.bind(this)
     this.scrollFunction = this.scrollFunction.bind(this)
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   // https://icomoon.io/app/#/select/font
@@ -20,7 +21,6 @@ handleClick(e){
   e.preventDefault()
   this.setState({showHam: !this.state.showHam})
 }
-// <li><Link to='/page1'> Page-1 </Link> </li>
 scrollFunction(x, e) {
   e.preventDefault();
   document.getElementById(x).scrollIntoView({ 
@@ -29,6 +29,21 @@ scrollFunction(x, e) {
   inline: "nearest"
 });  
 }
+componentDidMount() {
+   window.addEventListener('scroll', this.handleScroll);
+ }
+
+ handleScroll(e) {
+   var scroll = window.scrollY;
+   var header = document.getElementsByTagName('Header')[0];
+   if (scroll > 50) {
+    header.style.background = "#fff";
+  }
+  else{
+    header.style.background = 'rgba(255,255,255,0.5)';
+  }
+ }
+
 render(){
   return (
       <header>
