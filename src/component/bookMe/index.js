@@ -21,7 +21,7 @@ handleChange(e){
   console.log( event.target.name, ' event.target.value == ', e.target.value);
 }
 handleSubmit(e){
-  e.preventDefault()
+  // e.preventDefault()
   console.log(' handleSubmit ', );
 }
 
