@@ -3,27 +3,27 @@
 let initialState = [ 
   {
     name: 'HAIR SERVICES',
-    img: '../images/hairServices-2.jpeg',
+    img: '../images/hairServices.jpeg',
   },
   {
     name: 'SKIN CARE',
-    img: '../images/skinCare-2.jpg',
+    img: '../images/skinCare.jpg',
   },
   {
     name: 'WAXING',
-    img: '../images/womanLegs-2.jpg',
+    img: '../images/womanLegs.jpg',
   },
   {
     name: 'THREADING',
-    img: '../images/threading-2.jpeg',
+    img: '../images/threading.jpeg',
   },
   {
     name: 'MASSAGE',
-    img: '../images/massage-2.jpeg',
+    img: '../images/massage.jpeg',
   },
   {
     name: 'NAIL CARE',
-    img: '../images/nailServices-2.jpeg',
+    img: '../images/nailServices.jpeg',
   }
 ]
 export default (state=initialState, action) => {
