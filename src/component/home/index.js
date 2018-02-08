@@ -23,8 +23,6 @@ class Home extends React.Component {
           <BookMe></BookMe>
           <li className="callUs">Call us at: {this.props.mobile}</li>
         </div>
-      
-       <img src="../../images/homeBkgd.jpg" className="ref"/>
       </section>
     )
   }

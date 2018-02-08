@@ -1,7 +1,7 @@
 'use strict'
 import React from 'react'
 import {connect} from 'react-redux'
-import {renderIf} from '../../lib/util'
+import {renderIf, classToggler} from '../../lib/util'
 
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 class BookMe extends React.Component {
@@ -18,16 +18,22 @@ class BookMe extends React.Component {
 // </div>
 handleChange(e){
   e.preventDefault();
-  console.log(' event.target.value == ', e.target.value);
+  console.log( event.target.name, ' event.target.value == ', e.target.value);
 }
 handleSubmit(e){
   e.preventDefault()
   console.log(' handleSubmit ', );
 }
+
+// className={classToggler({
+//   'list-form': true,
+//   'error': this.state.error,
+// })}
   render(){
     return (
       <section className='bookMe'>
-       <form >
+       <form onSubmit={this.handleSubmit}
+       >
          <input 
             type="text" 
             onChange={this.handleChange} 
@@ -46,7 +52,7 @@ handleSubmit(e){
             placeholder={this.props.placeholder.message} 
             label="message" required></textarea>
 
-         <button type="submit" className="bookButton inForm" onSubmit={this.handleSubmit} value="BOOK NOW">BOOK NOW</button>
+         <button type="submit" className="bookButton inForm" value="BOOK NOW">BOOK NOW</button>
        </form>
       </section>
     )
