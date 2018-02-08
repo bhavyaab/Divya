@@ -5,6 +5,7 @@ color: $color-1;
 font-weight: bolder;
 .contactBook{
   width: 80%;
+  margin-left: 20%;
 }
 .contactUs{
     padding: 4.75%;
@@ -38,7 +39,7 @@ font-weight: bolder;
   .right{
     h2{
       margin-left: 20%;
-      padding-top: 1%;
+      // padding-top: 1%;
     }
   }
   .left > h2{
@@ -79,6 +80,9 @@ font-weight: bolder;
   }
 }
 @media screen and (min-width: 1024px) {
+  .contactBook{
+    margin-left: 0%;
+  }
   .contactUs{
     width: 70%;
     margin-left: 15%;

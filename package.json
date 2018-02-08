@@ -1,7 +1,7 @@
 {
   "name": "ReactApp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Beauty salon React-Redux application",
   "main": "main.js",
   "jest": {
     "globals": {
@@ -13,7 +13,6 @@
   },
   "homepage": "https://bhavyaab.github.io/memoryGame",
   "scripts": {
-    "electron": "electron . && npm run watch",
     "start": "node server.js",
     "build": "webpack -d",
     "watch": "webpack-dev-server --content-base src/ --inline --hot --port 8000 --color",
@@ -26,14 +25,11 @@
     "kill": "taskkill /f /im node.exe"
   },
   "keywords": [
-    "reactjs",
-    "electron"
+    "reactjs"
   ],
-  "author": "",
+  "author": "Bhavya Bharti",
   "license": "ISC",
-  "devDependencies": {
-    "electron": "1.7.12"
-  },
+  "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
