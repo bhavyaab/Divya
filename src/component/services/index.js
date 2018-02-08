@@ -28,7 +28,6 @@ class Services extends React.Component {
 
 
 const mapStateToProps = (state, props) => {
-  console.log(' state ', state);
   return {
     services: state.services
   }
