@@ -25,9 +25,9 @@ class Contact extends React.Component {
             <div className="contactBook">
               <h2>GET IN TOUCH</h2>
               <ul>
-                <li><span>Address:</span><div><a href="https://goo.gl/maps/v7YVipcUe4A2" target="blank">5504 NE 8th  Place Renton WA 98059   view map</a></div></li>
-                <li><span>Call:</span><div> +1 (425) 233 4321</div></li>
-                <li><span>Email:</span> <div>sondarya@gmail.com</div></li>
+                <li><span>Address:</span><div><a href={this.props.contact.googleMap} target="blank">{this.props.contact.address}   <br />view map</a></div></li>
+                <li><span>Call:</span><div>{this.props.contact.mobile}</div></li>
+                <li><span>Email:</span> <div>{this.props.contact.email}</div></li>
                </ul>
             </div>
           </div>
@@ -47,7 +47,9 @@ class Contact extends React.Component {
 
 
 const mapStateToProps = (state, props) => {
-  return {}
+  return {
+    contact: state.admin.contact
+  }
 }
 
 const mapDispatchToProp = (dispatch, getState) => {

@@ -21,7 +21,7 @@ class Home extends React.Component {
             <li>APPOINTMENT</li>
           </ul>
           <BookMe></BookMe>
-          <li className="callUs">Call us at: (425)-233-2388</li>
+          <li className="callUs">Call us at: {this.props.mobile}</li>
         </div>
       
        <img src="../../images/homeBkgd.jpg" className="ref"/>
@@ -32,7 +32,9 @@ class Home extends React.Component {
 
 
 const mapStateToProps = (state, props) => {
-  return {}
+  return {
+    mobile: state.admin.contact.mobile
+  }
 }
 
 const mapDispatchToProp = (dispatch, getState) => {

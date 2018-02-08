@@ -8,31 +8,45 @@ class BookMe extends React.Component {
   constructor(props){
     super(props)
     this.state = {}
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 //Google api key : AIzaSyA3OgCLXVXYu6o7PWq5VTELYnGMmf_4_fA
 // <div className="thanks">
 // <li>Thank You!</li>
 // <li>Will contact you soon!!</li>
 // </div>
+handleChange(e){
+  e.preventDefault();
+  console.log(' event.target.value == ', e.target.value);
+}
+handleSubmit(e){
+  e.preventDefault()
+  console.log(' handleSubmit ', );
+}
   render(){
-    var placeholder = {
-      name: 'Your name',
-      mobile: 'Your phone number',
-      message: 'Say Hi .. '
-    }
     return (
       <section className='bookMe'>
        <form >
-         <label for="name"></label>
-         <input type="text" id="name" placeholder={placeholder.name} required />
+         <input 
+            type="text" 
+            onChange={this.handleChange} 
+            placeholder={this.props.placeholder.name} 
+            label="name" required />
 
-         <label for="email"></label>
-         <input type="mobile" id="mobile" placeholder={placeholder.mobile}/>
+         <input 
+            type="mobile" 
+            onChange={this.handleChange} 
+            placeholder={this.props.placeholder.mobile} 
+            label="mobile" required/>
 
-         <label for="message"></label>
-         <textarea type="message" id="message" placeholder={placeholder.message}></textarea>
+         <textarea 
+            type="text"
+            onChange={this.handleChange} 
+            placeholder={this.props.placeholder.message} 
+            label="message" required></textarea>
 
-         <button type="submit" className="bookButton inForm" value="BOOK NOW">BOOK NOW</button>
+         <button type="submit" className="bookButton inForm" onSubmit={this.handleSubmit} value="BOOK NOW">BOOK NOW</button>
        </form>
       </section>
     )
@@ -41,7 +55,10 @@ class BookMe extends React.Component {
 
 
 const mapStateToProps = (state, props) => {
-  return {}
+  return {
+    placeholder: state.bookMe.placeholder,
+    formData: state.bookMe.formData
+  }
 }
 
 const mapDispatchToProp = (dispatch, getState) => {
