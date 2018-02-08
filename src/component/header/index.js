@@ -25,7 +25,7 @@ scrollFunction(x, e) {
   e.preventDefault();
   document.getElementById(x).scrollIntoView({ 
   behavior: 'smooth',
-  block: "center",
+  block: "nearest",
   inline: "nearest"
 });  
 }
