@@ -11,7 +11,7 @@
       }
     }
   },
-  "homepage": "https://bhavyaab.github.io/memoryGame",
+  "homepage": "https://bhavyaab.github.io/divyarani",
   "scripts": {
     "start": "node server.js",
     "build": "webpack -d",
