@@ -1,6 +1,5 @@
 'use strict'
 
-
 export const bookNow = (form) => ({
   type: 'BOOK_NOW',
   payload: form
