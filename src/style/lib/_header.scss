@@ -1,0 +1,84 @@
+header{
+// font-family: 'Satisfy', cursive;
+  width: 100%;
+
+  font-family: 'Cuprum', sans-serif;
+  position: fixed;
+  font-size: 1.5em;
+  font-weight: bolder;
+  z-index: 20;
+  background-color: $white_rgba;
+  color: $color-2;
+  padding-bottom: 1%;
+  img{
+    height: 8.5vw;
+    margin-left: 5%;
+  }
+  a{
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+}
+nav{
+  text-align:  center;
+  padding-bottom: 4%;
+  li{
+    padding: 1%;
+  }
+  li:last-child{
+    padding-bottom: 0%;
+  }
+  li:hover{
+    font-weight: bold;
+    color: $color-1;
+    cursor: pointer;
+  }
+}
+
+.ham{
+  cursor: pointer;
+  position: absolute;
+  top: 3vh;
+  left: 85%;
+  i{
+    font-size: 4vw;
+  }
+}
+.ham:active{
+  animation-name: rotate ease;
+  animation-duration: 8s;
+  animation-direction: alternate;
+}
+@media screen and (min-width: 600px) {
+  header{
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 960px) {
+  header{
+    font-size: 0.75em;
+    padding-bottom: 0%;
+    background-color: $white_rgba;
+  }
+  .ham{
+    display: none;
+  }
+  .collapse{
+    display: block;
+  }
+  nav{
+    padding-bottom: 0%;
+    // font-size: 2vh;
+  }
+  nav > ul{
+    position: absolute;
+    width: 60%;
+    left: 45%;
+    top: 38%;
+  }
+  nav > ul > li{
+    display: inline-block;
+    margin-right: 3.5%;
+  }
+}

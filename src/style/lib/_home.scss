@@ -1,0 +1,79 @@
+.home{
+  min-height: 51.5vw;
+  width: 100%;
+  background-color: #f0eeef;
+  font-weight: bold;
+  letter-spacing: 0.25vw;
+  background-image: url('/../images/heroImage.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img{
+    width: 100%;
+    display: none;
+  }
+  h4{
+    font-size: 1.5em;
+    padding-top: 12%;
+    margin-left: 19%;
+    margin-bottom: 3%;
+    color: $color-1;
+  }
+  .book{
+    width: 23vw;
+    margin-left: 22.6vw;
+    background-color: $white;
+    
+    .title{
+      background-color: $color-2;
+      padding: 4%;
+      li{
+        color: $white;
+        padding: 2.5%;
+      }
+    }
+    li{
+      text-align: center;
+      color: $color-1;
+      font-size: 0.5em;
+      font-weight: bolder;
+    }
+  }
+  
+  .callUs{
+    padding-bottom: 7.5%;
+  }
+}
+.inHome{
+  input, textarea{
+    border: 0.15em solid $color-2;
+    background-color: $white;    
+  }
+  input:focus, textarea:focus{
+    color: $color-1;
+    background-color: $white;
+    border: 0.15em solid $color-2;
+  }
+    ::placeholder { 
+      color: $color-2;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: $color-2;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+     color: $color-2;;
+  }
+}
+
+@media screen and (min-width:750px){  
+  .home > h4{
+      // font-size: 4vw;
+      text-align: inherit;
+      // margin-left: 10%;
+    }
+    .book{
+      width: 25%;
+    }
+
+}

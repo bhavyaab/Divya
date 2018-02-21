@@ -1,0 +1,42 @@
+.bookMe{
+  width: 100%;
+  font-size: 2vw;
+  background-color: $white;
+  form{
+    width: 78%;
+    margin-left: 11%;
+    padding-top: 11%;
+  }
+  
+  input, textarea{
+    width: 100%;
+    padding: .5em;
+    margin: 4% 0;
+    font-size: .6em;
+    resize: auto;
+    cursor: pointer;
+  }
+  textarea{
+    overflow: hidden;
+  }
+
+  input:focus, textarea:focus{
+    font-size: 0.75em;
+  }
+}
+.bookButton{
+  padding: 4% 8%;
+  font-size: .75em;
+  margin: 7.5% 0 6.5%;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+
+.inForm{
+  background-color: $color-2;
+  color: $white;
+  border: 2px solid $color-2;
+  width: 100%;
+
+}
