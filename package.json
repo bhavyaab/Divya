@@ -2,7 +2,9 @@
   "name": "ReactApp",
   "version": "1.0.0",
   "description": "Beauty salon React-Redux application",
-  "main": "main.js",
+  "author": "Bhavya Bharti",
+  "license": "ISC",
+  "main": "server.js",
   "jest": {
     "globals": {
       "__DEBUG__": true,
@@ -27,8 +29,6 @@
   "keywords": [
     "reactjs"
   ],
-  "author": "Bhavya Bharti",
-  "license": "ISC",
   "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.26.0",
