@@ -7,7 +7,7 @@
     margin-left: 11%;
     padding-top: 11%;
   }
-  
+
   input, textarea{
     width: 100%;
     padding: .5em;
@@ -20,9 +20,7 @@
     overflow: hidden;
   }
 
-  input:focus, textarea:focus{
-    font-size: 0.75em;
-  }
+  input:focus, textarea:focus{}
 }
 .bookButton{
   padding: 4% 8%;

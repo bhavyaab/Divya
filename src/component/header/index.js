@@ -23,11 +23,11 @@ handleClick(e){
 }
 scrollFunction(x, e) {
   e.preventDefault();
-  document.getElementById(x).scrollIntoView({ 
+  document.getElementById(x).scrollIntoView({
   behavior: 'smooth',
   block: "start",
   inline: "nearest"
-});  
+});
 }
 componentDidMount() {
    window.addEventListener('scroll', this.handleScroll);
@@ -48,7 +48,7 @@ render(){
   return (
       <header>
        <Link to='/' >
-         <img src="../../images/logoFull.png" alt="logo" />
+         <img onClick={this.scrollFunction.bind(this, 'home')} src="../../images/logoFull.png" alt="logo" />
        </Link>
        <div className='ham'
        data-toggle="collapse"

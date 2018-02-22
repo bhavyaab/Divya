@@ -1,9 +1,9 @@
 var initialState = {
   contact: {
-    address: '5504 NE 8th  Place Renton WA 98059',
-    mobile: '+1 (425)-233-2388',
+    address: '8 Black Thorn ST Little Rock, AR 72223-4536 US',
+    mobile: '+1 (919)-455-8210',
     email: 'sondarya@gmail.com',
-    googleMap: 'https://goo.gl/maps/v7YVipcUe4A2'
+    googleMap: 'https://goo.gl/maps/oU3JsqFNeVT2'
   }
 }
 
