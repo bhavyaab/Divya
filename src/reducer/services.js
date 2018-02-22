@@ -1,7 +1,7 @@
 'use strict'
 
-let initialState = [ 
-  {
+let initialState = [
+{  
     name: 'HAIR SERVICES',
     img: '../images/hairServices.jpeg',
   },
