@@ -25,7 +25,7 @@ class Contact extends React.Component {
             <div className="contactBook">
               <h2>GET IN TOUCH</h2>
               <ul>
-                <li><span>Address:</span><div><a href={this.props.contact.googleMap} target="blank">{this.props.contact.address}   <br />view map</a></div></li>
+                <li><span>Address:</span><div>{this.props.contact.address}   <br /><a href={this.props.contact.googleMap} target="blank"> view map  <i className="fas fa-share"></i></a></div></li>
                 <li><span>Call:</span><div>{this.props.contact.mobile}</div></li>
                 <li><span>Email:</span> <div>{this.props.contact.email}</div></li>
                </ul>
