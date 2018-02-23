@@ -5,20 +5,21 @@ export const bookNow = (form) => ({
   payload: form
 })
 
-export function change(form) {
+export function changeForm(form) {
   return dispatch => dispatch({
-    type: FORM_UPDATE_VALUE,
+    type: 'FORM_UPDATE_VALUE',
     payload: form
   });
 }
-export function submit(form) {
-  return dispatch => dispatch({
-    type: FORM_SUBMIT_VALUE,
-    payload: form
-  });
+export function submitForm(form) {
+  return dispatch =>
+  {
+  dispatch({ type: 'FORM_SUBMIT_VALUE', payload: form })
+  dispatch({ type: 'FORM_RESET'})
+ }
 }
-export function reset() {
+export function resetForm() {
   return dispatch => dispatch({
-    type: FORM_RESET
+    type: 'FORM_RESET'
   });
 }

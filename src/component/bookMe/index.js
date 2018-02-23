@@ -1,9 +1,10 @@
 'use strict'
 import React from 'react'
 import {connect} from 'react-redux'
-import {renderIf, classToggler} from '../../lib/util'
+import {renderIf, classToggler, formateTel} from '../../lib/util'
 
 import {BrowserRouter, Route, Link} from 'react-router-dom'
+import {changeForm, submitForm, resetForm }  from '../../action/bookMe-action'
 class BookMe extends React.Component {
   constructor(props){
     super(props)
@@ -16,13 +17,18 @@ class BookMe extends React.Component {
 // <li>Thank You!</li>
 // <li>Will contact you soon!!</li>
 // </div>
+
+
 handleChange(e){
   e.preventDefault();
-  console.log( event.target.name, ' event.target.value == ', e.target.value);
+  (e.target.name == 'mobile' && e.target.value.length < 15) ? e.target.value = formateTel(e.target.value) : e.target.value = this.props.formData.mobile
+  this.props.formData[e.target.name] = e.target.value
+  this.props.changeForm(this.props.formData)
 }
 handleSubmit(e){
-  // e.preventDefault()
-  console.log(' handleSubmit ', );
+  e.preventDefault()
+  this.props.submitForm(this.props.formData)
+  this.refs.form.reset();
 }
 
 // className={classToggler({
@@ -32,24 +38,26 @@ handleSubmit(e){
   render(){
     return (
       <section className='bookMe'>
-       <form onSubmit={this.handleSubmit}
-       >
-         <input 
-            type="text" 
-            onChange={this.handleChange} 
-            placeholder={this.props.placeholder.name} 
+       <form onSubmit={this.handleSubmit} ref="form" >
+         <input
+            type="text"
+            name="name"
+            onChange={this.handleChange}
+            placeholder={this.props.placeholder.name}
             label="name" required />
 
-         <input 
-            type="mobile" 
-            onChange={this.handleChange} 
-            placeholder={this.props.placeholder.mobile} 
+         <input
+            type="text"
+            name="mobile"
+            onChange={this.handleChange}
+            placeholder={this.props.placeholder.mobile}
             label="mobile" required/>
 
-         <textarea 
+         <textarea
             type="text"
-            onChange={this.handleChange} 
-            placeholder={this.props.placeholder.message} 
+            name="message"
+            onChange={this.handleChange}
+            placeholder={this.props.placeholder.message}
             label="message" required></textarea>
 
          <button type="submit" className="bookButton inForm" value="BOOK NOW">BOOK NOW</button>
@@ -61,6 +69,7 @@ handleSubmit(e){
 
 
 const mapStateToProps = (state, props) => {
+  console.log(' state ', state)
   return {
     placeholder: state.bookMe.placeholder,
     formData: state.bookMe.formData
@@ -68,8 +77,11 @@ const mapStateToProps = (state, props) => {
 }
 
 const mapDispatchToProp = (dispatch, getState) => {
-  return {}
+  return {
+    changeForm: (formData) => dispatch(changeForm(formData)),
+    submitForm: (formData) => dispatch(submitForm(formData)),
+    resetForm: (formData) => dispatch(resetForm(formData))
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProp)(BookMe)
-
