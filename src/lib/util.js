@@ -17,7 +17,6 @@ export const formateTel = (data) => {
   var len = data.length
   var number = data.split('+1').join('').split('(').join('').split(')').join('').split('-').join('');
   if(isNaN(Number(number))) {
-    alert('Please enter a valid number!')
     return '';
   }
   if(len < 15){

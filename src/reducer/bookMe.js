@@ -14,7 +14,6 @@ var initialState = {
 
 export default (state=initialState, action) => {
   let {type, payload} = action
-  console.log('type == ', type, '   payload == ', payload, '  state == ', state)
   switch (type) {
     case 'FORM_UPDATE_VALUE':
     state.formData = payload

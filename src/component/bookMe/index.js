@@ -13,15 +13,11 @@ class BookMe extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 //Google api key : AIzaSyA3OgCLXVXYu6o7PWq5VTELYnGMmf_4_fA
-// <div className="thanks">
-// <li>Thank You!</li>
-// <li>Will contact you soon!!</li>
-// </div>
-
 
 handleChange(e){
   e.preventDefault();
   if(e.target.name == 'mobile') e.target.value.length < 15 ? e.target.value = formateTel(e.target.value) : e.target.value = this.props.formData.mobile
+  if(e.target.name == 'mobile') e.target.value == '' ? e.target.placeholder = 'Please enter a valid number!' : ''
   this.props.formData[e.target.name] = e.target.value
   this.props.changeForm(this.props.formData)
 }
