@@ -21,7 +21,7 @@ class BookMe extends React.Component {
 
 handleChange(e){
   e.preventDefault();
-  (e.target.name == 'mobile' && e.target.value.length < 15) ? e.target.value = formateTel(e.target.value) : e.target.value = this.props.formData.mobile
+  if(e.target.name == 'mobile') e.target.value.length < 15 ? e.target.value = formateTel(e.target.value) : e.target.value = this.props.formData.mobile
   this.props.formData[e.target.name] = e.target.value
   this.props.changeForm(this.props.formData)
 }
@@ -52,7 +52,6 @@ handleSubmit(e){
             onChange={this.handleChange}
             placeholder={this.props.placeholder.mobile}
             label="mobile" required/>
-
          <textarea
             type="text"
             name="message"
