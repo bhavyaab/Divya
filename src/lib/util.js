@@ -19,8 +19,19 @@ export const formateTel = (data) => {
   if(isNaN(Number(number))) {
     return '';
   }
-  if(len < 15){
+  if(len < 14){
     len == 1 ? data = '(' + data : len == 4? data = data + ')-' : len == 9 ? data = data + '-': data
   }
   return data
+}
+
+
+export const  ifttt = (request) => {
+  request = JSON.stringify(request);
+  superagent.post('https://maker.ifttt.com/trigger/site_contact/with/key/jnqBy_aKqPAhnb_9LY_WrFYpeVDQy3YMzjOWRWx5QNp')
+  .set('Content-Type', '*')
+  .send(request)
+  .end(function(err, res){
+     err? console.error(err) : console.log(res);
+  });
 }

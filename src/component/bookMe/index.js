@@ -19,7 +19,7 @@ handleChange(e){
   if(e.target.name == 'mobile') e.target.value.length < 15 ? e.target.value = formateTel(e.target.value) : e.target.value = this.props.formData.mobile
   if(e.target.name == 'mobile') e.target.value == '' ? e.target.placeholder = 'Please enter a valid number!' : ''
   this.props.formData[e.target.name] = e.target.value
-  this.props.changeForm(this.props.formData)
+  // this.props.changeForm(this.props.formData)
 }
 handleSubmit(e){
   e.preventDefault()
@@ -64,7 +64,6 @@ handleSubmit(e){
 
 
 const mapStateToProps = (state, props) => {
-  console.log(' state ', state)
   return {
     placeholder: state.bookMe.placeholder,
     formData: state.bookMe.formData
@@ -74,8 +73,7 @@ const mapStateToProps = (state, props) => {
 const mapDispatchToProp = (dispatch, getState) => {
   return {
     changeForm: (formData) => dispatch(changeForm(formData)),
-    submitForm: (formData) => dispatch(submitForm(formData)),
-    resetForm: (formData) => dispatch(resetForm(formData))
+    submitForm: (formData) => dispatch(submitForm(formData))
   }
 }
 
