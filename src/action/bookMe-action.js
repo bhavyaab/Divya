@@ -11,17 +11,14 @@ export function changeForm(form) {
   });
 }
 let request = {
-  event: 'site_contact',
-  values: {
     value1: 'Name not shared!',
     value2: 'Contact not shared!',
     value3: 'Hello from portfolio!'
-  }
 }
 export function submitForm(form) {
   if (form.mobile.length < 14 ) return dispatch => dispatch({ type: 'FORM_UPDATE_VALUE', payload: form })
   else {
-    request.values = {
+    request =  {
       value1: form.name || 'Name not shared!',
       value2: form.mobile || 'Contact not shared!',
       value3: form.message || 'Hello from portfolio!'

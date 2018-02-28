@@ -12,6 +12,9 @@ export const log = (act, msg) => {
   __DEBUG__ ? act == '__ERROR__'? console.error(act, msg):console.debug(act, msg) : ''
 }
 
+export const $log = (msg) => {
+  __DEBUG__ ? console.error(msg):console.debug(msg)
+}
 
 export const formateTel = (data) => {
   var len = data.length
