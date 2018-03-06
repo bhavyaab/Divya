@@ -7,7 +7,9 @@
     margin-left: 11%;
     padding-top: 11%;
   }
-
+  form:focus{
+    width: 78%;
+  }
   input, textarea{
     width: 100%;
     padding: .5em;
@@ -16,11 +18,7 @@
     resize: auto;
     cursor: pointer;
   }
-  textarea{
-    overflow: hidden;
-  }
 
-  input:focus, textarea:focus{}
 }
 .bookButton{
   padding: 4% 8%;
