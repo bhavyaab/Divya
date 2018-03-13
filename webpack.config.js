@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|jpeg|gif|png|tiff|svg)$/,
-        exclude: /\.glyph.svg/,
+        // exclude: /\.glyph.svg/,
         use: [
           {
             loader: 'url-loader',
