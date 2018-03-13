@@ -20,7 +20,7 @@ app.listen(PORT, function(){
 
 
 
-// var http = require('http')
-// setInterval(function() {
-//   http.get('http://divyarani.herokuapp.com')
-// }, 3000000)
+var http = require('http');
+setInterval(function() {
+  http.get('http://sondarya.herokuapp.com');
+}, 3000000);
